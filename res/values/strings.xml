@@ -3,7 +3,7 @@
     <string name="app_name">FFvideo Live Wallpaper</string>
     <string name="wallpaper">FFvideo live wallpaper</string>
     <string name="description">Use a video as the wallpaper</string>
-    <string name="about_text">Copyright © 2011 \nUriel Avalos and Frank and Robot Productions\n\nThis software uses libraries from <a href="http://ffmpeg.org">FFmpeg</a> licensed under the <a href="http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html">LGPLv2.1</a>\n\nThis software uses <a href="https://github.com/markfguerra/GLWallpaperService">GLWallpaperService</a> licensed under the <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache v2</a>\n
+    <string name="about_text">Copyright © 2011 \nUriel Avalos and Frank and Robot Productions\n\nThe source code for this app can be downloaded from the project’s <a href="https://github.com/frankandrobot/FFvideoLiveWallpaper">Github repository</a>\n\nThis software uses libraries from <a href="http://ffmpeg.org">FFmpeg</a> licensed under the <a href="http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html">LGPLv2.1</a>\n\nThis software uses <a href="https://github.com/markfguerra/GLWallpaperService">GLWallpaperService</a> licensed under the <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache v2</a>\n
 </string>
 <string name="license_button">License: GNU GPLv3</string>
 <string name="license">GNU GENERAL PUBLIC LICENSE\n\nVersion 3, 29 June 2007\n\nCopyright © 2007 Free Software Foundation, Inc.
