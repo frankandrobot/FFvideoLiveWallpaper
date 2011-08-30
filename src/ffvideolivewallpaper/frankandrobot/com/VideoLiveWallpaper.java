@@ -169,7 +169,7 @@ public class VideoLiveWallpaper extends GLWallpaperService
 	videoName = settings.getString("videoName",defaultVideoName);
 	//if video already loaded and chose new video, then reload
 	if ( !prevVideoName.equals(videoName) && videoLoaded ) {
-	    //this is buggy and forces a crash in FreeConversionStorage
+	    //TODO
 	    mEngine.queueEvent(new Runnable() {
 	     	    @Override
 	     		public void run() {
