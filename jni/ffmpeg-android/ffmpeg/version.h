@@ -1,0 +1,1 @@
+#define FFMPEG_VERSION "git-7650304"
