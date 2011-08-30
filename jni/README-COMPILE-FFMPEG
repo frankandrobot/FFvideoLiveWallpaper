@@ -1,0 +1,6 @@
+1. cd into "ffmpeg-android"
+2. Run "extract.sh"
+3. Modify "build.sh". Run "./configure --help" from "ffmpeg"
+to find options to enable or disable.
+4. Run "build.sh"
+5. Run "clean-build.sh"

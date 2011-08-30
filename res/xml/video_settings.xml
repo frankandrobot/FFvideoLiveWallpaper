@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+            android:title="Wallpaper settings">
+            
+	<ffvideolivewallpaper.frankandrobot.com.PrefsSlider
+            android:key="fps"
+	    android:layout_width="fill_parent"
+	    android:orientation="vertical"
+	    android:title="Set video frame rate"
+            android:summary=" "
+            android:defaultValue="30" />
+        
+	<CheckBoxPreference
+	   android:title="Span video"
+	   android:key="spanVideo"
+	   android:summary="Split video across the home screens" 
+	   android:defaultValue="true"
+	   />
+
+	<PreferenceScreen
+	   android:title="Select video" 
+	   android:summary="Press to select a video"
+	   >
+	  <intent
+             android:targetPackage="ffvideolivewallpaper.frankandrobot.com"
+             android:targetClass="ffvideolivewallpaper.frankandrobot.com.SelectVideo"/>
+	</PreferenceScreen>
+
+	<PreferenceScreen
+	   android:title="About" 
+	   >
+	  <intent
+             android:targetPackage="ffvideolivewallpaper.frankandrobot.com"
+             android:targetClass="ffvideolivewallpaper.frankandrobot.com.About"/>
+	</PreferenceScreen>
+
+    </PreferenceCategory>
+                
+</PreferenceScreen>

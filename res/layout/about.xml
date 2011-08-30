@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	      android:orientation="vertical" 
+	      android:layout_width="fill_parent"
+	      android:layout_height="wrap_content">
+  <TextView
+     android:id="@+id/about_box"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:textSize="20sp"
+     android:paddingTop="12sp"
+     android:paddingLeft="12sp"
+     android:paddingRight="12sp"
+     android:paddingBottom="12sp"
+     android:text="@string/about_text"
+     />
+  <Button
+      android:id="@+id/license"
+      android:layout_height="wrap_content"
+      android:layout_width="wrap_content"
+      android:text="@string/license_button"
+      android:onClick="showLicense" 
+      android:layout_marginLeft="12sp"
+      android:layout_marginRight="12sp"
+      android:layout_marginBottom="12sp"
+      />
+</LinearLayout>
