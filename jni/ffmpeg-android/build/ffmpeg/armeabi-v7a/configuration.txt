@@ -1,5 +1,5 @@
 install prefix            ../build/ffmpeg/armeabi-v7a
-source path               /home/uri/projects/FFvideoLiveWallpaper/jni/ffmpeg-android/ffmpeg
+source path               /mnt/sda3/FFvideoLiveWallpaperRel/jni/ffmpeg-android/ffmpeg
 C compiler                arm-linux-androideabi-gcc
 ARCH                      c (generic)
 big-endian                no

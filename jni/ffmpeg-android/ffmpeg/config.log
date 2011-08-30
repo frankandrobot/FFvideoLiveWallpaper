@@ -1,4 +1,4 @@
-# ./configure --target-os=linux --arch=arm --cross-prefix=arm-linux-androideabi- --arch=arm --sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm --soname-prefix=/data/data/ffvideolivewallpaper.frankandrobot.com/lib/ --disable-ffmpeg --disable-ffplay --disable-ffserver --disable-ffprobe --disable-encoders --disable-muxers --disable-devices --disable-protocols --enable-protocol=file --enable-avfilter --disable-network --disable-avdevice --disable-asm --enable-shared --disable-symver --enable-small --disable-doc --optimization-flags=-O2 --prefix=../build/ffmpeg/armeabi-v7a --extra-cflags='-march=armv7-a -mfloat-abi=softfp' --extra-ldflags=
+# ./configure --target-os=linux --arch=arm --cross-prefix=arm-linux-androideabi- --arch=arm --sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm --soname-prefix=/data/data/ffvideolivewallpaper.frankandrobot.com/lib/ --disable-ffmpeg --disable-ffplay --disable-ffserver --disable-ffprobe --disable-encoders --disable-muxers --disable-devices --disable-protocols --enable-protocol=file --enable-avfilter --disable-network --disable-avdevice --disable-asm --enable-shared --disable-symver --enable-small --disable-doc --optimization-flags=-O2 --prefix=../build/ffmpeg/armeabi-v7a --extra-cflags='-march=armv7-a -mfloat-abi=softfp' --extra-ldflags=
 ACODEC_TESTS='ac3_test
 adpcm_ima_qt_test
 adpcm_ima_wav_test
@@ -12,7 +12,6 @@ mp2_test
 pcm_test
 wmav1_test
 wmav2_test'
-ANT_HOME=/usr/share/java/apache-ant
 ARCH_EXT_LIST='
     altivec
     amd3dnow
@@ -58,12 +57,12 @@ BASH=/bin/sh
 BASHOPTS=cmdhist:extquote:force_fignore:hostcomplete:interactive_comments:progcomp:promptvars:sourcepath
 BASH_ALIASES=()
 BASH_ARGC=([0]="27")
-BASH_ARGV=([0]="--extra-ldflags=" [1]="--extra-cflags=-march=armv7-a -mfloat-abi=softfp" [2]="--prefix=../build/ffmpeg/armeabi-v7a" [3]="--optimization-flags=-O2" [4]="--disable-doc" [5]="--enable-small" [6]="--disable-symver" [7]="--enable-shared" [8]="--disable-asm" [9]="--disable-avdevice" [10]="--disable-network" [11]="--enable-avfilter" [12]="--enable-protocol=file" [13]="--disable-protocols" [14]="--disable-devices" [15]="--disable-muxers" [16]="--disable-encoders" [17]="--disable-ffprobe" [18]="--disable-ffserver" [19]="--disable-ffplay" [20]="--disable-ffmpeg" [21]="--soname-prefix=/data/data/ffvideolivewallpaper.frankandrobot.com/lib/" [22]="--sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm" [23]="--arch=arm" [24]="--cross-prefix=arm-linux-androideabi-" [25]="--arch=arm" [26]="--target-os=linux")
+BASH_ARGV=([0]="--extra-ldflags=" [1]="--extra-cflags=-march=armv7-a -mfloat-abi=softfp" [2]="--prefix=../build/ffmpeg/armeabi-v7a" [3]="--optimization-flags=-O2" [4]="--disable-doc" [5]="--enable-small" [6]="--disable-symver" [7]="--enable-shared" [8]="--disable-asm" [9]="--disable-avdevice" [10]="--disable-network" [11]="--enable-avfilter" [12]="--enable-protocol=file" [13]="--disable-protocols" [14]="--disable-devices" [15]="--disable-muxers" [16]="--disable-encoders" [17]="--disable-ffprobe" [18]="--disable-ffserver" [19]="--disable-ffplay" [20]="--disable-ffmpeg" [21]="--soname-prefix=/data/data/ffvideolivewallpaper.frankandrobot.com/lib/" [22]="--sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm" [23]="--arch=arm" [24]="--cross-prefix=arm-linux-androideabi-" [25]="--arch=arm" [26]="--target-os=linux")
 BASH_CMDS=()
 BASH_LINENO=([0]="0")
 BASH_SOURCE=([0]="./configure")
-BASH_VERSINFO=([0]="4" [1]="2" [2]="8" [3]="2" [4]="release" [5]="i686-pc-linux-gnu")
-BASH_VERSION='4.2.8(2)-release'
+BASH_VERSINFO=([0]="4" [1]="1" [2]="0" [3]="1" [4]="release" [5]="i686-pc-linux-gnu")
+BASH_VERSION='4.1.0(1)-release'
 BSF_LIST='aac_adtstoasc_bsf
 chomp_bsf
 dump_extradata_bsf
@@ -238,7 +237,7 @@ CMDLINE_SET='
     target_path
 '
 COLORFGBG='15;0'
-COLORTERM=rxvt
+COLORTERM=rxvt-xpm
 COMPONENT_LIST='
     bsfs
     decoders
@@ -616,6 +615,16 @@ libopenjpeg_decoder
 libschroedinger_decoder
 libspeex_decoder
 libvpx_decoder'
+DEFAULTBROWSER=chromium-browser
+DEFAULTDRAW=inkscapelite
+DEFAULTHTMLEDITOR=mozedit
+DEFAULTIMAGEEDITOR=mtpaint
+DEFAULTIMAGEVIEWER=viewnior
+DEFAULTMEDIAPLAYER=gnome-mplayer
+DEFAULTPAINT=mtpaint
+DEFAULTSPREADSHEET=gnumeric
+DEFAULTTEXTEDITOR=geany
+DEFAULTWORDPROCESSOR=abiword
 DEMUXER_LIST='aac_demuxer
 ac3_demuxer
 aea_demuxer
@@ -763,12 +772,11 @@ yuv4mpegpipe_demuxer
 libnut_demuxer'
 DEPEND_CMD='$(DEPCC) $(DEPFLAGS) $< | sed -e "/^\#.*/d" -e "s,^[[:space:]]*$(*F)\\.o,$(@D)/$(*F).o," > $(@:.o=.d)'
 DEPFLAGS='$(CPPFLAGS) $(CFLAGS) -MM'
-DESKTOP_SESSION=openbox
 DIRSTACK=()
-DISPLAY=:0
-DM_CONTROL=/var/run/xdmctl
+DISPLAY=:0.0
 E1=0
 E2=1
+EDITOR=mp
 ENCODER_LIST='a64multi_encoder
 a64multi5_encoder
 asv1_encoder
@@ -876,8 +884,8 @@ libvpx_encoder
 libx264_encoder
 libxavs_encoder
 libxvid_encoder'
-EUID=1000
-FFMPEG_CONFIGURATION='--target-os=linux --arch=arm --cross-prefix=arm-linux-androideabi- --arch=arm --sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm --soname-prefix=/data/data/ffvideolivewallpaper.frankandrobot.com/lib/ --disable-ffmpeg --disable-ffplay --disable-ffserver --disable-ffprobe --disable-encoders --disable-muxers --disable-devices --disable-protocols --enable-protocol=file --enable-avfilter --disable-network --disable-avdevice --disable-asm --enable-shared --disable-symver --enable-small --disable-doc --optimization-flags=-O2 --prefix=../build/ffmpeg/armeabi-v7a --extra-cflags='\''-march=armv7-a -mfloat-abi=softfp'\'' --extra-ldflags='
+EUID=0
+FFMPEG_CONFIGURATION='--target-os=linux --arch=arm --cross-prefix=arm-linux-androideabi- --arch=arm --sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm --soname-prefix=/data/data/ffvideolivewallpaper.frankandrobot.com/lib/ --disable-ffmpeg --disable-ffplay --disable-ffserver --disable-ffprobe --disable-encoders --disable-muxers --disable-devices --disable-protocols --enable-protocol=file --enable-avfilter --disable-network --disable-avdevice --disable-asm --enable-shared --disable-symver --enable-small --disable-doc --optimization-flags=-O2 --prefix=../build/ffmpeg/armeabi-v7a --extra-cflags='\''-march=armv7-a -mfloat-abi=softfp'\'' --extra-ldflags='
 FFSERVERLDFLAGS=-Wl,-E
 FILTER_LIST='anull_filter
 anullsrc_filter
@@ -914,8 +922,10 @@ frei0r_src_filter
 nullsrc_filter
 nullsink_filter'
 FULLNAME='$(NAME)$(BUILDSUF)'
+GDK_NATIVE_WINDOWS=true
+GDK_USE_XFT=1
 GROUPS=()
-G_BROKEN_FILENAMES=1
+G_FILENAME_ENCODING=@locale
 HAVE_LIST='
     
     altivec
@@ -1041,8 +1051,11 @@ HAVE_LIST_PUB='
     bigendian
     fast_unaligned
 '
-HOME=/home/uri
-HOSTNAME=noahsark
+HISTCONTROL=ignoredups
+HISTFILESIZE=2000
+HISTSIZE=1000
+HOME=/root
+HOSTNAME=puppypc
 HOSTTYPE=i686
 HWACCEL_LIST='h263_vaapi_hwaccel
 h264_dxva2_hwaccel
@@ -1066,10 +1079,8 @@ v4l_indev
 vfwcap_indev
 x11_grab_device_indev
 libdc1394_indev'
-J2REDIR=/usr/lib/jvm/java-6-openjdk/jre
-J2SDKDIR=/usr/lib/jvm/java-6-openjdk
-JAVA_HOME=/usr/lib/jvm/java-6-openjdk
-LANG=en_US.utf8
+INPUTRC=/etc/inputrc
+LANG=en_US
 LAVFI_TESTS='crop_test
 crop_scale_test
 crop_scale_vflip_test
@@ -1126,13 +1137,17 @@ voc_test
 wav_test
 yuv4mpeg_test'
 LC_ALL=C
+LC_COLLATE=en_US
 LDFLAGS=' '
+LD_LIBRARY_PATH=/lib:/usr/lib:/usr/X11R7/lib:/root/my-applications/lib
 LIBNAME='$(LIBPREF)$(FULLNAME)$(LIBSUF)'
 LIBPREF=lib
 LIBSUF=.a
 LIB_INSTALL_EXTRA_CMD='$$(RANLIB) "$(LIBDIR)/$(LIBNAME)"'
-LOGNAME=uri
+LOGNAME=root
 MACHTYPE=i686-pc-linux-gnu
+MM_RUNASROOT=1
+MOZ_DISABLE_PANGO=1
 MOZ_PLUGIN_PATH=/usr/lib/mozilla/plugins
 MUXER_LIST='a64_muxer
 ac3_muxer
@@ -1234,7 +1249,8 @@ wav_muxer
 webm_muxer
 yuv4mpegpipe_muxer
 libnut_muxer'
-NDK=/docs/android/android-ndk-r6/
+NDK=/root/android/android-ndk-r5c
+OOO_FORCE_DESKTOP=gnome
 OPTERR=1
 OPTIND=1
 OSTYPE=linux-gnu
@@ -1262,7 +1278,7 @@ pnm_parser
 vc1_parser
 vp3_parser
 vp8_parser'
-PATH=/docs/android/android-ndk-r6//toolchains/arm-linux-androideabi-4.4.3/prebuilt/linux-x86/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/usr/share/java/apache-ant/bin:/opt/kde/bin:/usr/bin/vendor_perl:/usr/lib/perl5/vendor_perl/bin:/usr/bin/core_perl:/opt/qt/bin:/docs/android/android-ndk-r6:/docs/android/android-sdk-linux_x86/tools:/docs/android/android-sdk-linux_x86/platform-tools
+PATH=/root/android/android-ndk-r5c/toolchains/arm-linux-androideabi-4.4.3/prebuilt/linux-x86/bin:/bin:/usr/bin:/sbin:/usr/sbin:/usr/local/bin:/usr/X11R7/bin:/root/my-applications/bin:/root/android-sdk-linux_x86/tools:/root/androkd-sdk-linux_x86/platform-tools:/root/android/android-ndk-r5c:/root/android-sdk-linux_x86/platform-tools
 PATHS_LIST='
     bindir
     datadir
@@ -1274,10 +1290,10 @@ PATHS_LIST='
     soname_prefix
 '
 PIPESTATUS=([0]="0")
-PKG_CONFIG_PATH=:/opt/qt/lib/pkgconfig:/opt/qt/lib/pkgconfig
+PKG_CONFIG_PATH=/usr/lib/pkgconfig:
 POSIXLY_CORRECT=y
-PPID=18435
-PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME%%.*}:${PWD/$HOME/~}\007"'
+PPID=32622
+PREFIX=/usr
 PROTOCOL_LIST='concat_protocol
 file_protocol
 gopher_protocol
@@ -1294,11 +1310,10 @@ rtmps_protocol
 rtp_protocol
 tcp_protocol
 udp_protocol'
-PS3='> '
 PS4='+ '
-PWD=/home/uri/projects/FFvideoLiveWallpaper/jni/ffmpeg-android/ffmpeg
-QTDIR=/opt/qt
+PWD=/mnt/sda3/FFvideoLiveWallpaperRel/jni/ffmpeg-android/ffmpeg
 QT_XFT=true
+RGBDEF=/usr/share/X11/rgb.txt
 SEEK_TESTS='seek_ac3_rm_test
 seek_adpcm_ima_wav_test
 seek_adpcm_ms_wav_test
@@ -1415,19 +1430,19 @@ seek_yuv_avi_test'
 SHELL=/bin/bash
 SHELLOPTS=braceexpand:hashall:interactive-comments:posix
 SHFLAGS='-shared -Wl,-soname,$$(SONAME_PREFIX)$$(@F)'
-SHLVL=3
+SHLVL=4
 SLIBNAME='$(SLIBPREF)$(FULLNAME)$(SLIBSUF)'
 SLIBNAME_WITH_MAJOR='$(SLIBNAME).$(LIBMAJOR)'
 SLIBNAME_WITH_VERSION='$(SLIBNAME).$(LIBVERSION)'
 SLIBPREF=lib
 SLIBSUF=.so
-TERM=rxvt
+TERM=xterm
 THREADS_LIST='
     pthreads
     w32threads
 '
-UID=1000
-USER=uri
+UID=0
+USER=root
 VCODEC_TESTS='asv1_test
 asv2_test
 dnxhd_1080i_test
@@ -1468,16 +1483,16 @@ svq1_test
 wmv1_test
 wmv2_test
 yuv_test'
-WINDOWID=16777219
-WINDOWPATH=7
-XDG_CACHE_HOME=/home/uri/.cache
-XDG_CONFIG_DIRS=/etc/xdg:/etc/xdg
-XDG_CONFIG_HOME=/home/uri/.config
-XDG_DATA_DIRS=/usr/share/:/usr/local/share/:/usr/share/:/usr/local/share/:/opt/kde/share:/opt/kde/share
-XDG_DATA_HOME=/home/uri/.local/share
-XDG_SESSION_COOKIE=d0791d9b7576edcd392376994b9ee382-1314314496.527699-687674230
-XDM_MANAGED=method=classic
-_='# ./configure --target-os=linux --arch=arm --cross-prefix=arm-linux-androideabi- --arch=arm --sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm --soname-prefix=/data/data/ffvideolivewallpaper.frankandrobot.com/lib/ --disable-ffmpeg --disable-ffplay --disable-ffserver --disable-ffprobe --disable-encoders --disable-muxers --disable-devices --disable-protocols --enable-protocol=file --enable-avfilter --disable-network --disable-avdevice --disable-asm --enable-shared --disable-symver --enable-small --disable-doc --optimization-flags=-O2 --prefix=../build/ffmpeg/armeabi-v7a --extra-cflags='\''-march=armv7-a -mfloat-abi=softfp'\'' --extra-ldflags='
+WINDOWID=41943043
+WINDOWPATH=4
+XDG_CACHE_HOME=/root/.cache
+XDG_CONFIG_DIRS=/etc/xdg
+XDG_CONFIG_HOME=/root/.config
+XDG_DATA_DIRS=/usr/share:/usr/local/share
+XDG_DATA_HOME=/root/.local/share
+XFINANSDIR=/root/.xfinans
+XLIB_SKIP_ARGB_VISUALS=1
+_='# ./configure --target-os=linux --arch=arm --cross-prefix=arm-linux-androideabi- --arch=arm --sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm --soname-prefix=/data/data/ffvideolivewallpaper.frankandrobot.com/lib/ --disable-ffmpeg --disable-ffplay --disable-ffserver --disable-ffprobe --disable-encoders --disable-muxers --disable-devices --disable-protocols --enable-protocol=file --enable-avfilter --disable-network --disable-avdevice --disable-asm --enable-shared --disable-symver --enable-small --disable-doc --optimization-flags=-O2 --prefix=../build/ffmpeg/armeabi-v7a --extra-cflags='\''-march=armv7-a -mfloat-abi=softfp'\'' --extra-ldflags='
 aac_adtstoasc_bsf=yes
 aac_decoder=yes
 aac_decoder_select='mdct rdft'
@@ -3225,7 +3240,7 @@ sonic_decoder=yes
 sonic_decoder_select=golomb
 sonic_encoder_select=golomb
 sonic_ls_encoder_select=golomb
-source_path=/home/uri/projects/FFvideoLiveWallpaper/jni/ffmpeg-android/ffmpeg
+source_path=/mnt/sda3/FFvideoLiveWallpaperRel/jni/ffmpeg-android/ffmpeg
 source_path_used=no
 sox_demuxer=yes
 sp5x_decoder=yes
@@ -3257,7 +3272,7 @@ swscale=yes
 swscale_alpha=yes
 symver=no
 symver_if_any='symver_asm_label symver_gnu_asm'
-sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm
+sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm
 targa_decoder=yes
 target_os=linux
 target_os_default=linux
@@ -3432,931 +3447,931 @@ zmbv_decoder=yes
 zmbv_decoder_select=zlib
 zmbv_encoder_select=zlib
 type mktemp
-mktemp is /usr/bin/mktemp
+mktemp is /bin/mktemp
 check_ld
 check_cc
-BEGIN /tmp/ffconf.HvMtQqff.c
+BEGIN /tmp/ffconf.QGeVZkZA.c
     1	int main(void){ return 0; }
-END /tmp/ffconf.HvMtQqff.c
-arm-linux-androideabi-gcc --sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm -march=armv7-a -mfloat-abi=softfp -c -o /tmp/ffconf.oPMWktED.o /tmp/ffconf.HvMtQqff.c
-arm-linux-androideabi-gcc --sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm -o /tmp/ffconf.2gliO7Ag /tmp/ffconf.oPMWktED.o
+END /tmp/ffconf.QGeVZkZA.c
+arm-linux-androideabi-gcc --sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm -march=armv7-a -mfloat-abi=softfp -c -o /tmp/ffconf.A1355Kwc.o /tmp/ffconf.QGeVZkZA.c
+arm-linux-androideabi-gcc --sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm -o /tmp/ffconf.ErYg6zYM /tmp/ffconf.A1355Kwc.o
 check_cflags -std=c99
 check_cc -std=c99
-BEGIN /tmp/ffconf.HvMtQqff.c
+BEGIN /tmp/ffconf.QGeVZkZA.c
     1	int x;
-END /tmp/ffconf.HvMtQqff.c
-arm-linux-androideabi-gcc --sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -march=armv7-a -mfloat-abi=softfp -std=c99 -c -o /tmp/ffconf.oPMWktED.o /tmp/ffconf.HvMtQqff.c
+END /tmp/ffconf.QGeVZkZA.c
+arm-linux-androideabi-gcc --sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -march=armv7-a -mfloat-abi=softfp -std=c99 -c -o /tmp/ffconf.A1355Kwc.o /tmp/ffconf.QGeVZkZA.c
 check_cc -D_FILE_OFFSET_BITS=64
-BEGIN /tmp/ffconf.HvMtQqff.c
+BEGIN /tmp/ffconf.QGeVZkZA.c
     1	#include <stdlib.h>
-END /tmp/ffconf.HvMtQqff.c
-arm-linux-androideabi-gcc --sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -march=armv7-a -mfloat-abi=softfp -std=c99 -D_FILE_OFFSET_BITS=64 -c -o /tmp/ffconf.oPMWktED.o /tmp/ffconf.HvMtQqff.c
+END /tmp/ffconf.QGeVZkZA.c
+arm-linux-androideabi-gcc --sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -march=armv7-a -mfloat-abi=softfp -std=c99 -D_FILE_OFFSET_BITS=64 -c -o /tmp/ffconf.A1355Kwc.o /tmp/ffconf.QGeVZkZA.c
 check_cc -D_LARGEFILE_SOURCE
-BEGIN /tmp/ffconf.HvMtQqff.c
+BEGIN /tmp/ffconf.QGeVZkZA.c
     1	#include <stdlib.h>
-END /tmp/ffconf.HvMtQqff.c
-arm-linux-androideabi-gcc --sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -march=armv7-a -mfloat-abi=softfp -std=c99 -D_LARGEFILE_SOURCE -c -o /tmp/ffconf.oPMWktED.o /tmp/ffconf.HvMtQqff.c
+END /tmp/ffconf.QGeVZkZA.c
+arm-linux-androideabi-gcc --sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -march=armv7-a -mfloat-abi=softfp -std=c99 -D_LARGEFILE_SOURCE -c -o /tmp/ffconf.A1355Kwc.o /tmp/ffconf.QGeVZkZA.c
 check_host_cflags -std=c99
 check_host_cc -std=c99
-BEGIN /tmp/ffconf.HvMtQqff.c
+BEGIN /tmp/ffconf.QGeVZkZA.c
     1	int x;
-END /tmp/ffconf.HvMtQqff.c
-gcc -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -O3 -g -Wall -std=c99 -c -o /tmp/ffconf.oPMWktED.o /tmp/ffconf.HvMtQqff.c
+END /tmp/ffconf.QGeVZkZA.c
+gcc -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -O3 -g -Wall -std=c99 -c -o /tmp/ffconf.A1355Kwc.o /tmp/ffconf.QGeVZkZA.c
 check_cpp_condition stdlib.h defined(__PIC__) || defined(__pic__) || defined(PIC)
 check_cpp
-BEGIN /tmp/ffconf.HvMtQqff.c
+BEGIN /tmp/ffconf.QGeVZkZA.c
     1	#include <stdlib.h>
     2	#if !(defined(__PIC__) || defined(__pic__) || defined(PIC))
     3	#error "unsatisfied condition: defined(__PIC__) || defined(__pic__) || defined(PIC)"
     4	#endif
-END /tmp/ffconf.HvMtQqff.c
-arm-linux-androideabi-gcc --sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -march=armv7-a -mfloat-abi=softfp -std=c99 -E -o /tmp/ffconf.oPMWktED.o /tmp/ffconf.HvMtQqff.c
+END /tmp/ffconf.QGeVZkZA.c
+arm-linux-androideabi-gcc --sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -march=armv7-a -mfloat-abi=softfp -std=c99 -E -o /tmp/ffconf.A1355Kwc.o /tmp/ffconf.QGeVZkZA.c
 check_cflags -fomit-frame-pointer
 check_cc -fomit-frame-pointer
-BEGIN /tmp/ffconf.HvMtQqff.c
+BEGIN /tmp/ffconf.QGeVZkZA.c
     1	int x;
-END /tmp/ffconf.HvMtQqff.c
-arm-linux-androideabi-gcc --sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -c -o /tmp/ffconf.oPMWktED.o /tmp/ffconf.HvMtQqff.c
+END /tmp/ffconf.QGeVZkZA.c
+arm-linux-androideabi-gcc --sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -c -o /tmp/ffconf.A1355Kwc.o /tmp/ffconf.QGeVZkZA.c
 check_cc
-BEGIN /tmp/ffconf.HvMtQqff.c
+BEGIN /tmp/ffconf.QGeVZkZA.c
     1	int ff_extern;
-END /tmp/ffconf.HvMtQqff.c
-arm-linux-androideabi-gcc --sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -c -o /tmp/ffconf.oPMWktED.o /tmp/ffconf.HvMtQqff.c
+END /tmp/ffconf.QGeVZkZA.c
+arm-linux-androideabi-gcc --sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -c -o /tmp/ffconf.A1355Kwc.o /tmp/ffconf.QGeVZkZA.c
 check_cc
-BEGIN /tmp/ffconf.HvMtQqff.c
+BEGIN /tmp/ffconf.QGeVZkZA.c
     1	void foo(void) { __asm__ volatile ("" ::); }
-END /tmp/ffconf.HvMtQqff.c
-arm-linux-androideabi-gcc --sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -c -o /tmp/ffconf.oPMWktED.o /tmp/ffconf.HvMtQqff.c
+END /tmp/ffconf.QGeVZkZA.c
+arm-linux-androideabi-gcc --sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -c -o /tmp/ffconf.A1355Kwc.o /tmp/ffconf.QGeVZkZA.c
 check_cc
-BEGIN /tmp/ffconf.HvMtQqff.c
+BEGIN /tmp/ffconf.QGeVZkZA.c
     1	void foo(char * restrict p);
-END /tmp/ffconf.HvMtQqff.c
-arm-linux-androideabi-gcc --sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -c -o /tmp/ffconf.oPMWktED.o /tmp/ffconf.HvMtQqff.c
+END /tmp/ffconf.QGeVZkZA.c
+arm-linux-androideabi-gcc --sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -c -o /tmp/ffconf.A1355Kwc.o /tmp/ffconf.QGeVZkZA.c
 check_cc
-BEGIN /tmp/ffconf.HvMtQqff.c
+BEGIN /tmp/ffconf.QGeVZkZA.c
     1	struct { int x; } __attribute__((packed)) x;
-END /tmp/ffconf.HvMtQqff.c
-arm-linux-androideabi-gcc --sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -c -o /tmp/ffconf.oPMWktED.o /tmp/ffconf.HvMtQqff.c
+END /tmp/ffconf.QGeVZkZA.c
+arm-linux-androideabi-gcc --sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -c -o /tmp/ffconf.A1355Kwc.o /tmp/ffconf.QGeVZkZA.c
 check_cc
-BEGIN /tmp/ffconf.HvMtQqff.c
+BEGIN /tmp/ffconf.QGeVZkZA.c
     1	union { int x; } __attribute__((may_alias)) x;
-END /tmp/ffconf.HvMtQqff.c
-arm-linux-androideabi-gcc --sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -c -o /tmp/ffconf.oPMWktED.o /tmp/ffconf.HvMtQqff.c
+END /tmp/ffconf.QGeVZkZA.c
+arm-linux-androideabi-gcc --sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -c -o /tmp/ffconf.A1355Kwc.o /tmp/ffconf.QGeVZkZA.c
 check_cc
-BEGIN /tmp/ffconf.HvMtQqff.c
+BEGIN /tmp/ffconf.QGeVZkZA.c
     1	unsigned int endian = 'B' << 24 | 'I' << 16 | 'G' << 8 | 'E';
-END /tmp/ffconf.HvMtQqff.c
-arm-linux-androideabi-gcc --sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -c -o /tmp/ffconf.oPMWktED.o /tmp/ffconf.HvMtQqff.c
+END /tmp/ffconf.QGeVZkZA.c
+arm-linux-androideabi-gcc --sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -c -o /tmp/ffconf.A1355Kwc.o /tmp/ffconf.QGeVZkZA.c
 check_cflags -marm
 check_cc -marm
-BEGIN /tmp/ffconf.HvMtQqff.c
+BEGIN /tmp/ffconf.QGeVZkZA.c
     1	int x;
-END /tmp/ffconf.HvMtQqff.c
-arm-linux-androideabi-gcc --sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -c -o /tmp/ffconf.oPMWktED.o /tmp/ffconf.HvMtQqff.c
+END /tmp/ffconf.QGeVZkZA.c
+arm-linux-androideabi-gcc --sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -c -o /tmp/ffconf.A1355Kwc.o /tmp/ffconf.QGeVZkZA.c
 check_ld
 check_cc
-BEGIN /tmp/ffconf.HvMtQqff.c
+BEGIN /tmp/ffconf.QGeVZkZA.c
     1	__asm__ (".eabi_attribute 28, 1");
     2	int main(void) { return 0; }
-END /tmp/ffconf.HvMtQqff.c
-arm-linux-androideabi-gcc --sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -c -o /tmp/ffconf.oPMWktED.o /tmp/ffconf.HvMtQqff.c
-arm-linux-androideabi-gcc --sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm -o /tmp/ffconf.2gliO7Ag /tmp/ffconf.oPMWktED.o
+END /tmp/ffconf.QGeVZkZA.c
+arm-linux-androideabi-gcc --sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -c -o /tmp/ffconf.A1355Kwc.o /tmp/ffconf.QGeVZkZA.c
+arm-linux-androideabi-gcc --sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm -o /tmp/ffconf.ErYg6zYM /tmp/ffconf.A1355Kwc.o
 check_asm pld "pld [r0]"
 check_as
-BEGIN /tmp/ffconf.HvMtQqff.c
+BEGIN /tmp/ffconf.QGeVZkZA.c
     1	void foo(void){ __asm__ volatile("pld [r0]"); }
-END /tmp/ffconf.HvMtQqff.c
-arm-linux-androideabi-gcc --sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -fPIC -c -o /tmp/ffconf.oPMWktED.o /tmp/ffconf.HvMtQqff.c
+END /tmp/ffconf.QGeVZkZA.c
+arm-linux-androideabi-gcc --sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -fPIC -c -o /tmp/ffconf.A1355Kwc.o /tmp/ffconf.QGeVZkZA.c
 check_asm armv5te "qadd r0, r0, r0"
 check_as
-BEGIN /tmp/ffconf.HvMtQqff.c
+BEGIN /tmp/ffconf.QGeVZkZA.c
     1	void foo(void){ __asm__ volatile("qadd r0, r0, r0"); }
-END /tmp/ffconf.HvMtQqff.c
-arm-linux-androideabi-gcc --sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -fPIC -c -o /tmp/ffconf.oPMWktED.o /tmp/ffconf.HvMtQqff.c
+END /tmp/ffconf.QGeVZkZA.c
+arm-linux-androideabi-gcc --sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -fPIC -c -o /tmp/ffconf.A1355Kwc.o /tmp/ffconf.QGeVZkZA.c
 check_asm armv6 "sadd16 r0, r0, r0"
 check_as
-BEGIN /tmp/ffconf.HvMtQqff.c
+BEGIN /tmp/ffconf.QGeVZkZA.c
     1	void foo(void){ __asm__ volatile("sadd16 r0, r0, r0"); }
-END /tmp/ffconf.HvMtQqff.c
-arm-linux-androideabi-gcc --sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -fPIC -c -o /tmp/ffconf.oPMWktED.o /tmp/ffconf.HvMtQqff.c
+END /tmp/ffconf.QGeVZkZA.c
+arm-linux-androideabi-gcc --sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -fPIC -c -o /tmp/ffconf.A1355Kwc.o /tmp/ffconf.QGeVZkZA.c
 check_asm armv6t2 "movt r0, #0"
 check_as
-BEGIN /tmp/ffconf.HvMtQqff.c
+BEGIN /tmp/ffconf.QGeVZkZA.c
     1	void foo(void){ __asm__ volatile("movt r0, #0"); }
-END /tmp/ffconf.HvMtQqff.c
-arm-linux-androideabi-gcc --sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -fPIC -c -o /tmp/ffconf.oPMWktED.o /tmp/ffconf.HvMtQqff.c
+END /tmp/ffconf.QGeVZkZA.c
+arm-linux-androideabi-gcc --sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -fPIC -c -o /tmp/ffconf.A1355Kwc.o /tmp/ffconf.QGeVZkZA.c
 check_asm armvfp "fadds s0, s0, s0"
 check_as
-BEGIN /tmp/ffconf.HvMtQqff.c
+BEGIN /tmp/ffconf.QGeVZkZA.c
     1	void foo(void){ __asm__ volatile("fadds s0, s0, s0"); }
-END /tmp/ffconf.HvMtQqff.c
-arm-linux-androideabi-gcc --sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -fPIC -c -o /tmp/ffconf.oPMWktED.o /tmp/ffconf.HvMtQqff.c
+END /tmp/ffconf.QGeVZkZA.c
+arm-linux-androideabi-gcc --sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -fPIC -c -o /tmp/ffconf.A1355Kwc.o /tmp/ffconf.QGeVZkZA.c
 check_asm iwmmxt "wunpckelub wr6, wr4"
 check_as
-BEGIN /tmp/ffconf.HvMtQqff.c
+BEGIN /tmp/ffconf.QGeVZkZA.c
     1	void foo(void){ __asm__ volatile("wunpckelub wr6, wr4"); }
-END /tmp/ffconf.HvMtQqff.c
-arm-linux-androideabi-gcc --sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -fPIC -c -o /tmp/ffconf.oPMWktED.o /tmp/ffconf.HvMtQqff.c
-/tmp/cc0a7uXh.s: Assembler messages:
-/tmp/cc0a7uXh.s:25: Error: selected processor does not support `wunpckelub wr6,wr4'
+END /tmp/ffconf.QGeVZkZA.c
+arm-linux-androideabi-gcc --sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -fPIC -c -o /tmp/ffconf.A1355Kwc.o /tmp/ffconf.QGeVZkZA.c
+/tmp/ccSb3Mxb.s: Assembler messages:
+/tmp/ccSb3Mxb.s:25: Error: selected processor does not support `wunpckelub wr6,wr4'
 check_asm neon "vadd.i16 q0, q0, q0"
 check_as
-BEGIN /tmp/ffconf.HvMtQqff.c
+BEGIN /tmp/ffconf.QGeVZkZA.c
     1	void foo(void){ __asm__ volatile("vadd.i16 q0, q0, q0"); }
-END /tmp/ffconf.HvMtQqff.c
-arm-linux-androideabi-gcc --sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -fPIC -c -o /tmp/ffconf.oPMWktED.o /tmp/ffconf.HvMtQqff.c
-/tmp/ccWGTelc.s: Assembler messages:
-/tmp/ccWGTelc.s:25: Error: bad instruction `vadd.i16 q0,q0,q0'
+END /tmp/ffconf.QGeVZkZA.c
+arm-linux-androideabi-gcc --sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -fPIC -c -o /tmp/ffconf.A1355Kwc.o /tmp/ffconf.QGeVZkZA.c
+/tmp/ccUwnxbf.s: Assembler messages:
+/tmp/ccUwnxbf.s:25: Error: bad instruction `vadd.i16 q0,q0,q0'
 check_func dlopen
 check_ld
 check_cc
-BEGIN /tmp/ffconf.HvMtQqff.c
+BEGIN /tmp/ffconf.QGeVZkZA.c
     1	extern int dlopen();
     2	int main(void){ dlopen(); }
-END /tmp/ffconf.HvMtQqff.c
-arm-linux-androideabi-gcc --sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -c -o /tmp/ffconf.oPMWktED.o /tmp/ffconf.HvMtQqff.c
-arm-linux-androideabi-gcc --sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm -o /tmp/ffconf.2gliO7Ag /tmp/ffconf.oPMWktED.o
+END /tmp/ffconf.QGeVZkZA.c
+arm-linux-androideabi-gcc --sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -c -o /tmp/ffconf.A1355Kwc.o /tmp/ffconf.QGeVZkZA.c
+arm-linux-androideabi-gcc --sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm -o /tmp/ffconf.ErYg6zYM /tmp/ffconf.A1355Kwc.o
 check_func nanosleep
 check_ld
 check_cc
-BEGIN /tmp/ffconf.HvMtQqff.c
+BEGIN /tmp/ffconf.QGeVZkZA.c
     1	extern int nanosleep();
     2	int main(void){ nanosleep(); }
-END /tmp/ffconf.HvMtQqff.c
-arm-linux-androideabi-gcc --sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -c -o /tmp/ffconf.oPMWktED.o /tmp/ffconf.HvMtQqff.c
-arm-linux-androideabi-gcc --sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm -o /tmp/ffconf.2gliO7Ag /tmp/ffconf.oPMWktED.o
+END /tmp/ffconf.QGeVZkZA.c
+arm-linux-androideabi-gcc --sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -c -o /tmp/ffconf.A1355Kwc.o /tmp/ffconf.QGeVZkZA.c
+arm-linux-androideabi-gcc --sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm -o /tmp/ffconf.ErYg6zYM /tmp/ffconf.A1355Kwc.o
 check_func fcntl
 check_ld
 check_cc
-BEGIN /tmp/ffconf.HvMtQqff.c
+BEGIN /tmp/ffconf.QGeVZkZA.c
     1	extern int fcntl();
     2	int main(void){ fcntl(); }
-END /tmp/ffconf.HvMtQqff.c
-arm-linux-androideabi-gcc --sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -c -o /tmp/ffconf.oPMWktED.o /tmp/ffconf.HvMtQqff.c
-arm-linux-androideabi-gcc --sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm -o /tmp/ffconf.2gliO7Ag /tmp/ffconf.oPMWktED.o
+END /tmp/ffconf.QGeVZkZA.c
+arm-linux-androideabi-gcc --sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -c -o /tmp/ffconf.A1355Kwc.o /tmp/ffconf.QGeVZkZA.c
+arm-linux-androideabi-gcc --sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm -o /tmp/ffconf.ErYg6zYM /tmp/ffconf.A1355Kwc.o
 check_func fork
 check_ld
 check_cc
-BEGIN /tmp/ffconf.HvMtQqff.c
+BEGIN /tmp/ffconf.QGeVZkZA.c
     1	extern int fork();
     2	int main(void){ fork(); }
-END /tmp/ffconf.HvMtQqff.c
-arm-linux-androideabi-gcc --sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -c -o /tmp/ffconf.oPMWktED.o /tmp/ffconf.HvMtQqff.c
-arm-linux-androideabi-gcc --sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm -o /tmp/ffconf.2gliO7Ag /tmp/ffconf.oPMWktED.o
+END /tmp/ffconf.QGeVZkZA.c
+arm-linux-androideabi-gcc --sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -c -o /tmp/ffconf.A1355Kwc.o /tmp/ffconf.QGeVZkZA.c
+arm-linux-androideabi-gcc --sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm -o /tmp/ffconf.ErYg6zYM /tmp/ffconf.A1355Kwc.o
 check_func getaddrinfo
 check_ld
 check_cc
-BEGIN /tmp/ffconf.HvMtQqff.c
+BEGIN /tmp/ffconf.QGeVZkZA.c
     1	extern int getaddrinfo();
     2	int main(void){ getaddrinfo(); }
-END /tmp/ffconf.HvMtQqff.c
-arm-linux-androideabi-gcc --sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -c -o /tmp/ffconf.oPMWktED.o /tmp/ffconf.HvMtQqff.c
-arm-linux-androideabi-gcc --sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm -o /tmp/ffconf.2gliO7Ag /tmp/ffconf.oPMWktED.o
+END /tmp/ffconf.QGeVZkZA.c
+arm-linux-androideabi-gcc --sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -c -o /tmp/ffconf.A1355Kwc.o /tmp/ffconf.QGeVZkZA.c
+arm-linux-androideabi-gcc --sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm -o /tmp/ffconf.ErYg6zYM /tmp/ffconf.A1355Kwc.o
 check_func gethrtime
 check_ld
 check_cc
-BEGIN /tmp/ffconf.HvMtQqff.c
+BEGIN /tmp/ffconf.QGeVZkZA.c
     1	extern int gethrtime();
     2	int main(void){ gethrtime(); }
-END /tmp/ffconf.HvMtQqff.c
-arm-linux-androideabi-gcc --sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -c -o /tmp/ffconf.oPMWktED.o /tmp/ffconf.HvMtQqff.c
-arm-linux-androideabi-gcc --sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm -o /tmp/ffconf.2gliO7Ag /tmp/ffconf.oPMWktED.o
-/tmp/ffconf.oPMWktED.o: In function `main':
-ffconf.HvMtQqff.c:(.text+0x4): undefined reference to `gethrtime'
+END /tmp/ffconf.QGeVZkZA.c
+arm-linux-androideabi-gcc --sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -c -o /tmp/ffconf.A1355Kwc.o /tmp/ffconf.QGeVZkZA.c
+arm-linux-androideabi-gcc --sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm -o /tmp/ffconf.ErYg6zYM /tmp/ffconf.A1355Kwc.o
+/tmp/ffconf.A1355Kwc.o: In function `main':
+ffconf.QGeVZkZA.c:(.text+0x4): undefined reference to `gethrtime'
 collect2: ld returned 1 exit status
 check_func getrusage
 check_ld
 check_cc
-BEGIN /tmp/ffconf.HvMtQqff.c
+BEGIN /tmp/ffconf.QGeVZkZA.c
     1	extern int getrusage();
     2	int main(void){ getrusage(); }
-END /tmp/ffconf.HvMtQqff.c
-arm-linux-androideabi-gcc --sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -c -o /tmp/ffconf.oPMWktED.o /tmp/ffconf.HvMtQqff.c
-arm-linux-androideabi-gcc --sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm -o /tmp/ffconf.2gliO7Ag /tmp/ffconf.oPMWktED.o
+END /tmp/ffconf.QGeVZkZA.c
+arm-linux-androideabi-gcc --sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -c -o /tmp/ffconf.A1355Kwc.o /tmp/ffconf.QGeVZkZA.c
+arm-linux-androideabi-gcc --sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm -o /tmp/ffconf.ErYg6zYM /tmp/ffconf.A1355Kwc.o
 check_type sys/time.h sys/resource.h struct rusage ru_maxrss
 check_cc
-BEGIN /tmp/ffconf.HvMtQqff.c
+BEGIN /tmp/ffconf.QGeVZkZA.c
     1	
     2	#include <sys/time.h>
     3	#include <sys/resource.h>
     4	const void *p = &((struct rusage *)0)->ru_maxrss;
-END /tmp/ffconf.HvMtQqff.c
-arm-linux-androideabi-gcc --sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -c -o /tmp/ffconf.oPMWktED.o /tmp/ffconf.HvMtQqff.c
+END /tmp/ffconf.QGeVZkZA.c
+arm-linux-androideabi-gcc --sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -c -o /tmp/ffconf.A1355Kwc.o /tmp/ffconf.QGeVZkZA.c
 check_func inet_aton
 check_ld
 check_cc
-BEGIN /tmp/ffconf.HvMtQqff.c
+BEGIN /tmp/ffconf.QGeVZkZA.c
     1	extern int inet_aton();
     2	int main(void){ inet_aton(); }
-END /tmp/ffconf.HvMtQqff.c
-arm-linux-androideabi-gcc --sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -c -o /tmp/ffconf.oPMWktED.o /tmp/ffconf.HvMtQqff.c
-arm-linux-androideabi-gcc --sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm -o /tmp/ffconf.2gliO7Ag /tmp/ffconf.oPMWktED.o
+END /tmp/ffconf.QGeVZkZA.c
+arm-linux-androideabi-gcc --sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -c -o /tmp/ffconf.A1355Kwc.o /tmp/ffconf.QGeVZkZA.c
+arm-linux-androideabi-gcc --sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm -o /tmp/ffconf.ErYg6zYM /tmp/ffconf.A1355Kwc.o
 check_func isatty
 check_ld
 check_cc
-BEGIN /tmp/ffconf.HvMtQqff.c
+BEGIN /tmp/ffconf.QGeVZkZA.c
     1	extern int isatty();
     2	int main(void){ isatty(); }
-END /tmp/ffconf.HvMtQqff.c
-arm-linux-androideabi-gcc --sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -c -o /tmp/ffconf.oPMWktED.o /tmp/ffconf.HvMtQqff.c
-arm-linux-androideabi-gcc --sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm -o /tmp/ffconf.2gliO7Ag /tmp/ffconf.oPMWktED.o
+END /tmp/ffconf.QGeVZkZA.c
+arm-linux-androideabi-gcc --sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -c -o /tmp/ffconf.A1355Kwc.o /tmp/ffconf.QGeVZkZA.c
+arm-linux-androideabi-gcc --sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm -o /tmp/ffconf.ErYg6zYM /tmp/ffconf.A1355Kwc.o
 check_func memalign
 check_ld
 check_cc
-BEGIN /tmp/ffconf.HvMtQqff.c
+BEGIN /tmp/ffconf.QGeVZkZA.c
     1	extern int memalign();
     2	int main(void){ memalign(); }
-END /tmp/ffconf.HvMtQqff.c
-arm-linux-androideabi-gcc --sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -c -o /tmp/ffconf.oPMWktED.o /tmp/ffconf.HvMtQqff.c
-arm-linux-androideabi-gcc --sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm -o /tmp/ffconf.2gliO7Ag /tmp/ffconf.oPMWktED.o
+END /tmp/ffconf.QGeVZkZA.c
+arm-linux-androideabi-gcc --sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -c -o /tmp/ffconf.A1355Kwc.o /tmp/ffconf.QGeVZkZA.c
+arm-linux-androideabi-gcc --sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm -o /tmp/ffconf.ErYg6zYM /tmp/ffconf.A1355Kwc.o
 check_func mkstemp
 check_ld
 check_cc
-BEGIN /tmp/ffconf.HvMtQqff.c
+BEGIN /tmp/ffconf.QGeVZkZA.c
     1	extern int mkstemp();
     2	int main(void){ mkstemp(); }
-END /tmp/ffconf.HvMtQqff.c
-arm-linux-androideabi-gcc --sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -c -o /tmp/ffconf.oPMWktED.o /tmp/ffconf.HvMtQqff.c
-arm-linux-androideabi-gcc --sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm -o /tmp/ffconf.2gliO7Ag /tmp/ffconf.oPMWktED.o
+END /tmp/ffconf.QGeVZkZA.c
+arm-linux-androideabi-gcc --sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -c -o /tmp/ffconf.A1355Kwc.o /tmp/ffconf.QGeVZkZA.c
+arm-linux-androideabi-gcc --sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm -o /tmp/ffconf.ErYg6zYM /tmp/ffconf.A1355Kwc.o
 check_func posix_memalign
 check_ld
 check_cc
-BEGIN /tmp/ffconf.HvMtQqff.c
+BEGIN /tmp/ffconf.QGeVZkZA.c
     1	extern int posix_memalign();
     2	int main(void){ posix_memalign(); }
-END /tmp/ffconf.HvMtQqff.c
-arm-linux-androideabi-gcc --sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -c -o /tmp/ffconf.oPMWktED.o /tmp/ffconf.HvMtQqff.c
-arm-linux-androideabi-gcc --sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm -o /tmp/ffconf.2gliO7Ag /tmp/ffconf.oPMWktED.o
-/tmp/ffconf.oPMWktED.o: In function `main':
-ffconf.HvMtQqff.c:(.text+0x4): undefined reference to `posix_memalign'
+END /tmp/ffconf.QGeVZkZA.c
+arm-linux-androideabi-gcc --sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -c -o /tmp/ffconf.A1355Kwc.o /tmp/ffconf.QGeVZkZA.c
+arm-linux-androideabi-gcc --sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm -o /tmp/ffconf.ErYg6zYM /tmp/ffconf.A1355Kwc.o
+/tmp/ffconf.A1355Kwc.o: In function `main':
+ffconf.QGeVZkZA.c:(.text+0x4): undefined reference to `posix_memalign'
 collect2: ld returned 1 exit status
 check_func setrlimit
 check_ld
 check_cc
-BEGIN /tmp/ffconf.HvMtQqff.c
+BEGIN /tmp/ffconf.QGeVZkZA.c
     1	extern int setrlimit();
     2	int main(void){ setrlimit(); }
-END /tmp/ffconf.HvMtQqff.c
-arm-linux-androideabi-gcc --sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -c -o /tmp/ffconf.oPMWktED.o /tmp/ffconf.HvMtQqff.c
-arm-linux-androideabi-gcc --sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm -o /tmp/ffconf.2gliO7Ag /tmp/ffconf.oPMWktED.o
+END /tmp/ffconf.QGeVZkZA.c
+arm-linux-androideabi-gcc --sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -c -o /tmp/ffconf.A1355Kwc.o /tmp/ffconf.QGeVZkZA.c
+arm-linux-androideabi-gcc --sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm -o /tmp/ffconf.ErYg6zYM /tmp/ffconf.A1355Kwc.o
 check_func strerror_r
 check_ld
 check_cc
-BEGIN /tmp/ffconf.HvMtQqff.c
+BEGIN /tmp/ffconf.QGeVZkZA.c
     1	extern int strerror_r();
     2	int main(void){ strerror_r(); }
-END /tmp/ffconf.HvMtQqff.c
-arm-linux-androideabi-gcc --sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -c -o /tmp/ffconf.oPMWktED.o /tmp/ffconf.HvMtQqff.c
-arm-linux-androideabi-gcc --sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm -o /tmp/ffconf.2gliO7Ag /tmp/ffconf.oPMWktED.o
+END /tmp/ffconf.QGeVZkZA.c
+arm-linux-androideabi-gcc --sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -c -o /tmp/ffconf.A1355Kwc.o /tmp/ffconf.QGeVZkZA.c
+arm-linux-androideabi-gcc --sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm -o /tmp/ffconf.ErYg6zYM /tmp/ffconf.A1355Kwc.o
 check_func strtok_r
 check_ld
 check_cc
-BEGIN /tmp/ffconf.HvMtQqff.c
+BEGIN /tmp/ffconf.QGeVZkZA.c
     1	extern int strtok_r();
     2	int main(void){ strtok_r(); }
-END /tmp/ffconf.HvMtQqff.c
-arm-linux-androideabi-gcc --sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -c -o /tmp/ffconf.oPMWktED.o /tmp/ffconf.HvMtQqff.c
-arm-linux-androideabi-gcc --sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm -o /tmp/ffconf.2gliO7Ag /tmp/ffconf.oPMWktED.o
+END /tmp/ffconf.QGeVZkZA.c
+arm-linux-androideabi-gcc --sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -c -o /tmp/ffconf.A1355Kwc.o /tmp/ffconf.QGeVZkZA.c
+arm-linux-androideabi-gcc --sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm -o /tmp/ffconf.ErYg6zYM /tmp/ffconf.A1355Kwc.o
 check_func_headers io.h setmode
 check_ld
 check_cc
-BEGIN /tmp/ffconf.HvMtQqff.c
+BEGIN /tmp/ffconf.QGeVZkZA.c
     1	
     2	#include <io.h>
     3	int main(int argc, char **argv){
     4	    return (long) setmode;
     5	}
-END /tmp/ffconf.HvMtQqff.c
-arm-linux-androideabi-gcc --sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -c -o /tmp/ffconf.oPMWktED.o /tmp/ffconf.HvMtQqff.c
-/tmp/ffconf.HvMtQqff.c:2:16: error: io.h: No such file or directory
-/tmp/ffconf.HvMtQqff.c: In function 'main':
-/tmp/ffconf.HvMtQqff.c:4: error: 'setmode' undeclared (first use in this function)
-/tmp/ffconf.HvMtQqff.c:4: error: (Each undeclared identifier is reported only once
-/tmp/ffconf.HvMtQqff.c:4: error: for each function it appears in.)
+END /tmp/ffconf.QGeVZkZA.c
+arm-linux-androideabi-gcc --sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -c -o /tmp/ffconf.A1355Kwc.o /tmp/ffconf.QGeVZkZA.c
+/tmp/ffconf.QGeVZkZA.c:2:16: error: io.h: No such file or directory
+/tmp/ffconf.QGeVZkZA.c: In function 'main':
+/tmp/ffconf.QGeVZkZA.c:4: error: 'setmode' undeclared (first use in this function)
+/tmp/ffconf.QGeVZkZA.c:4: error: (Each undeclared identifier is reported only once
+/tmp/ffconf.QGeVZkZA.c:4: error: for each function it appears in.)
 check_func_headers lzo/lzo1x.h lzo1x_999_compress
 check_ld
 check_cc
-BEGIN /tmp/ffconf.HvMtQqff.c
+BEGIN /tmp/ffconf.QGeVZkZA.c
     1	
     2	#include <lzo/lzo1x.h>
     3	int main(int argc, char **argv){
     4	    return (long) lzo1x_999_compress;
     5	}
-END /tmp/ffconf.HvMtQqff.c
-arm-linux-androideabi-gcc --sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -c -o /tmp/ffconf.oPMWktED.o /tmp/ffconf.HvMtQqff.c
-/tmp/ffconf.HvMtQqff.c:2:23: error: lzo/lzo1x.h: No such file or directory
-/tmp/ffconf.HvMtQqff.c: In function 'main':
-/tmp/ffconf.HvMtQqff.c:4: error: 'lzo1x_999_compress' undeclared (first use in this function)
-/tmp/ffconf.HvMtQqff.c:4: error: (Each undeclared identifier is reported only once
-/tmp/ffconf.HvMtQqff.c:4: error: for each function it appears in.)
+END /tmp/ffconf.QGeVZkZA.c
+arm-linux-androideabi-gcc --sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -c -o /tmp/ffconf.A1355Kwc.o /tmp/ffconf.QGeVZkZA.c
+/tmp/ffconf.QGeVZkZA.c:2:23: error: lzo/lzo1x.h: No such file or directory
+/tmp/ffconf.QGeVZkZA.c: In function 'main':
+/tmp/ffconf.QGeVZkZA.c:4: error: 'lzo1x_999_compress' undeclared (first use in this function)
+/tmp/ffconf.QGeVZkZA.c:4: error: (Each undeclared identifier is reported only once
+/tmp/ffconf.QGeVZkZA.c:4: error: for each function it appears in.)
 check_lib2 windows.h psapi.h GetProcessMemoryInfo -lpsapi
 check_func_headers windows.h psapi.h GetProcessMemoryInfo -lpsapi
 check_ld -lpsapi
 check_cc
-BEGIN /tmp/ffconf.HvMtQqff.c
+BEGIN /tmp/ffconf.QGeVZkZA.c
     1	
     2	#include <windows.h>
     3	#include <psapi.h>
     4	int main(int argc, char **argv){
     5	    return (long) GetProcessMemoryInfo;
     6	}
-END /tmp/ffconf.HvMtQqff.c
-arm-linux-androideabi-gcc --sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -c -o /tmp/ffconf.oPMWktED.o /tmp/ffconf.HvMtQqff.c
-/tmp/ffconf.HvMtQqff.c:2:21: error: windows.h: No such file or directory
-/tmp/ffconf.HvMtQqff.c:3:19: error: psapi.h: No such file or directory
-/tmp/ffconf.HvMtQqff.c: In function 'main':
-/tmp/ffconf.HvMtQqff.c:5: error: 'GetProcessMemoryInfo' undeclared (first use in this function)
-/tmp/ffconf.HvMtQqff.c:5: error: (Each undeclared identifier is reported only once
-/tmp/ffconf.HvMtQqff.c:5: error: for each function it appears in.)
+END /tmp/ffconf.QGeVZkZA.c
+arm-linux-androideabi-gcc --sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -c -o /tmp/ffconf.A1355Kwc.o /tmp/ffconf.QGeVZkZA.c
+/tmp/ffconf.QGeVZkZA.c:2:21: error: windows.h: No such file or directory
+/tmp/ffconf.QGeVZkZA.c:3:19: error: psapi.h: No such file or directory
+/tmp/ffconf.QGeVZkZA.c: In function 'main':
+/tmp/ffconf.QGeVZkZA.c:5: error: 'GetProcessMemoryInfo' undeclared (first use in this function)
+/tmp/ffconf.QGeVZkZA.c:5: error: (Each undeclared identifier is reported only once
+/tmp/ffconf.QGeVZkZA.c:5: error: for each function it appears in.)
 check_func_headers windows.h GetProcessTimes
 check_ld
 check_cc
-BEGIN /tmp/ffconf.HvMtQqff.c
+BEGIN /tmp/ffconf.QGeVZkZA.c
     1	
     2	#include <windows.h>
     3	int main(int argc, char **argv){
     4	    return (long) GetProcessTimes;
     5	}
-END /tmp/ffconf.HvMtQqff.c
-arm-linux-androideabi-gcc --sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -c -o /tmp/ffconf.oPMWktED.o /tmp/ffconf.HvMtQqff.c
-/tmp/ffconf.HvMtQqff.c:2:21: error: windows.h: No such file or directory
-/tmp/ffconf.HvMtQqff.c: In function 'main':
-/tmp/ffconf.HvMtQqff.c:4: error: 'GetProcessTimes' undeclared (first use in this function)
-/tmp/ffconf.HvMtQqff.c:4: error: (Each undeclared identifier is reported only once
-/tmp/ffconf.HvMtQqff.c:4: error: for each function it appears in.)
+END /tmp/ffconf.QGeVZkZA.c
+arm-linux-androideabi-gcc --sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -c -o /tmp/ffconf.A1355Kwc.o /tmp/ffconf.QGeVZkZA.c
+/tmp/ffconf.QGeVZkZA.c:2:21: error: windows.h: No such file or directory
+/tmp/ffconf.QGeVZkZA.c: In function 'main':
+/tmp/ffconf.QGeVZkZA.c:4: error: 'GetProcessTimes' undeclared (first use in this function)
+/tmp/ffconf.QGeVZkZA.c:4: error: (Each undeclared identifier is reported only once
+/tmp/ffconf.QGeVZkZA.c:4: error: for each function it appears in.)
 check_func_headers windows.h VirtualAlloc
 check_ld
 check_cc
-BEGIN /tmp/ffconf.HvMtQqff.c
+BEGIN /tmp/ffconf.QGeVZkZA.c
     1	
     2	#include <windows.h>
     3	int main(int argc, char **argv){
     4	    return (long) VirtualAlloc;
     5	}
-END /tmp/ffconf.HvMtQqff.c
-arm-linux-androideabi-gcc --sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -c -o /tmp/ffconf.oPMWktED.o /tmp/ffconf.HvMtQqff.c
-/tmp/ffconf.HvMtQqff.c:2:21: error: windows.h: No such file or directory
-/tmp/ffconf.HvMtQqff.c: In function 'main':
-/tmp/ffconf.HvMtQqff.c:4: error: 'VirtualAlloc' undeclared (first use in this function)
-/tmp/ffconf.HvMtQqff.c:4: error: (Each undeclared identifier is reported only once
-/tmp/ffconf.HvMtQqff.c:4: error: for each function it appears in.)
+END /tmp/ffconf.QGeVZkZA.c
+arm-linux-androideabi-gcc --sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -c -o /tmp/ffconf.A1355Kwc.o /tmp/ffconf.QGeVZkZA.c
+/tmp/ffconf.QGeVZkZA.c:2:21: error: windows.h: No such file or directory
+/tmp/ffconf.QGeVZkZA.c: In function 'main':
+/tmp/ffconf.QGeVZkZA.c:4: error: 'VirtualAlloc' undeclared (first use in this function)
+/tmp/ffconf.QGeVZkZA.c:4: error: (Each undeclared identifier is reported only once
+/tmp/ffconf.QGeVZkZA.c:4: error: for each function it appears in.)
 check_header conio.h
 check_cpp
-BEGIN /tmp/ffconf.HvMtQqff.c
+BEGIN /tmp/ffconf.QGeVZkZA.c
     1	#include <conio.h>
     2	int x;
-END /tmp/ffconf.HvMtQqff.c
-arm-linux-androideabi-gcc --sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -E -o /tmp/ffconf.oPMWktED.o /tmp/ffconf.HvMtQqff.c
-/tmp/ffconf.HvMtQqff.c:1:19: error: conio.h: No such file or directory
+END /tmp/ffconf.QGeVZkZA.c
+arm-linux-androideabi-gcc --sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -E -o /tmp/ffconf.A1355Kwc.o /tmp/ffconf.QGeVZkZA.c
+/tmp/ffconf.QGeVZkZA.c:1:19: error: conio.h: No such file or directory
 check_header dlfcn.h
 check_cpp
-BEGIN /tmp/ffconf.HvMtQqff.c
+BEGIN /tmp/ffconf.QGeVZkZA.c
     1	#include <dlfcn.h>
     2	int x;
-END /tmp/ffconf.HvMtQqff.c
-arm-linux-androideabi-gcc --sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -E -o /tmp/ffconf.oPMWktED.o /tmp/ffconf.HvMtQqff.c
+END /tmp/ffconf.QGeVZkZA.c
+arm-linux-androideabi-gcc --sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -E -o /tmp/ffconf.A1355Kwc.o /tmp/ffconf.QGeVZkZA.c
 check_header dxva2api.h
 check_cpp
-BEGIN /tmp/ffconf.HvMtQqff.c
+BEGIN /tmp/ffconf.QGeVZkZA.c
     1	#include <dxva2api.h>
     2	int x;
-END /tmp/ffconf.HvMtQqff.c
-arm-linux-androideabi-gcc --sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -E -o /tmp/ffconf.oPMWktED.o /tmp/ffconf.HvMtQqff.c
-/tmp/ffconf.HvMtQqff.c:1:22: error: dxva2api.h: No such file or directory
+END /tmp/ffconf.QGeVZkZA.c
+arm-linux-androideabi-gcc --sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -E -o /tmp/ffconf.A1355Kwc.o /tmp/ffconf.QGeVZkZA.c
+/tmp/ffconf.QGeVZkZA.c:1:22: error: dxva2api.h: No such file or directory
 check_header malloc.h
 check_cpp
-BEGIN /tmp/ffconf.HvMtQqff.c
+BEGIN /tmp/ffconf.QGeVZkZA.c
     1	#include <malloc.h>
     2	int x;
-END /tmp/ffconf.HvMtQqff.c
-arm-linux-androideabi-gcc --sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -E -o /tmp/ffconf.oPMWktED.o /tmp/ffconf.HvMtQqff.c
+END /tmp/ffconf.QGeVZkZA.c
+arm-linux-androideabi-gcc --sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -E -o /tmp/ffconf.A1355Kwc.o /tmp/ffconf.QGeVZkZA.c
 check_header poll.h
 check_cpp
-BEGIN /tmp/ffconf.HvMtQqff.c
+BEGIN /tmp/ffconf.QGeVZkZA.c
     1	#include <poll.h>
     2	int x;
-END /tmp/ffconf.HvMtQqff.c
-arm-linux-androideabi-gcc --sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -E -o /tmp/ffconf.oPMWktED.o /tmp/ffconf.HvMtQqff.c
+END /tmp/ffconf.QGeVZkZA.c
+arm-linux-androideabi-gcc --sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -E -o /tmp/ffconf.A1355Kwc.o /tmp/ffconf.QGeVZkZA.c
 check_header sys/mman.h
 check_cpp
-BEGIN /tmp/ffconf.HvMtQqff.c
+BEGIN /tmp/ffconf.QGeVZkZA.c
     1	#include <sys/mman.h>
     2	int x;
-END /tmp/ffconf.HvMtQqff.c
-arm-linux-androideabi-gcc --sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -E -o /tmp/ffconf.oPMWktED.o /tmp/ffconf.HvMtQqff.c
+END /tmp/ffconf.QGeVZkZA.c
+arm-linux-androideabi-gcc --sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -E -o /tmp/ffconf.A1355Kwc.o /tmp/ffconf.QGeVZkZA.c
 check_header sys/resource.h
 check_cpp
-BEGIN /tmp/ffconf.HvMtQqff.c
+BEGIN /tmp/ffconf.QGeVZkZA.c
     1	#include <sys/resource.h>
     2	int x;
-END /tmp/ffconf.HvMtQqff.c
-arm-linux-androideabi-gcc --sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -E -o /tmp/ffconf.oPMWktED.o /tmp/ffconf.HvMtQqff.c
+END /tmp/ffconf.QGeVZkZA.c
+arm-linux-androideabi-gcc --sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -E -o /tmp/ffconf.A1355Kwc.o /tmp/ffconf.QGeVZkZA.c
 check_header sys/select.h
 check_cpp
-BEGIN /tmp/ffconf.HvMtQqff.c
+BEGIN /tmp/ffconf.QGeVZkZA.c
     1	#include <sys/select.h>
     2	int x;
-END /tmp/ffconf.HvMtQqff.c
-arm-linux-androideabi-gcc --sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -E -o /tmp/ffconf.oPMWktED.o /tmp/ffconf.HvMtQqff.c
+END /tmp/ffconf.QGeVZkZA.c
+arm-linux-androideabi-gcc --sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -E -o /tmp/ffconf.A1355Kwc.o /tmp/ffconf.QGeVZkZA.c
 check_header termios.h
 check_cpp
-BEGIN /tmp/ffconf.HvMtQqff.c
+BEGIN /tmp/ffconf.QGeVZkZA.c
     1	#include <termios.h>
     2	int x;
-END /tmp/ffconf.HvMtQqff.c
-arm-linux-androideabi-gcc --sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -E -o /tmp/ffconf.oPMWktED.o /tmp/ffconf.HvMtQqff.c
+END /tmp/ffconf.QGeVZkZA.c
+arm-linux-androideabi-gcc --sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -E -o /tmp/ffconf.A1355Kwc.o /tmp/ffconf.QGeVZkZA.c
 check_header vdpau/vdpau.h
 check_cpp
-BEGIN /tmp/ffconf.HvMtQqff.c
+BEGIN /tmp/ffconf.QGeVZkZA.c
     1	#include <vdpau/vdpau.h>
     2	int x;
-END /tmp/ffconf.HvMtQqff.c
-arm-linux-androideabi-gcc --sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -E -o /tmp/ffconf.oPMWktED.o /tmp/ffconf.HvMtQqff.c
-/tmp/ffconf.HvMtQqff.c:1:25: error: vdpau/vdpau.h: No such file or directory
+END /tmp/ffconf.QGeVZkZA.c
+arm-linux-androideabi-gcc --sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -E -o /tmp/ffconf.A1355Kwc.o /tmp/ffconf.QGeVZkZA.c
+/tmp/ffconf.QGeVZkZA.c:1:25: error: vdpau/vdpau.h: No such file or directory
 check_header vdpau/vdpau_x11.h
 check_cpp
-BEGIN /tmp/ffconf.HvMtQqff.c
+BEGIN /tmp/ffconf.QGeVZkZA.c
     1	#include <vdpau/vdpau_x11.h>
     2	int x;
-END /tmp/ffconf.HvMtQqff.c
-arm-linux-androideabi-gcc --sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -E -o /tmp/ffconf.oPMWktED.o /tmp/ffconf.HvMtQqff.c
-/tmp/ffconf.HvMtQqff.c:1:29: error: vdpau/vdpau_x11.h: No such file or directory
+END /tmp/ffconf.QGeVZkZA.c
+arm-linux-androideabi-gcc --sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -E -o /tmp/ffconf.A1355Kwc.o /tmp/ffconf.QGeVZkZA.c
+/tmp/ffconf.QGeVZkZA.c:1:29: error: vdpau/vdpau_x11.h: No such file or directory
 check_header X11/extensions/XvMClib.h
 check_cpp
-BEGIN /tmp/ffconf.HvMtQqff.c
+BEGIN /tmp/ffconf.QGeVZkZA.c
     1	#include <X11/extensions/XvMClib.h>
     2	int x;
-END /tmp/ffconf.HvMtQqff.c
-arm-linux-androideabi-gcc --sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -E -o /tmp/ffconf.oPMWktED.o /tmp/ffconf.HvMtQqff.c
-/tmp/ffconf.HvMtQqff.c:1:36: error: X11/extensions/XvMClib.h: No such file or directory
+END /tmp/ffconf.QGeVZkZA.c
+arm-linux-androideabi-gcc --sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -E -o /tmp/ffconf.A1355Kwc.o /tmp/ffconf.QGeVZkZA.c
+/tmp/ffconf.QGeVZkZA.c:1:36: error: X11/extensions/XvMClib.h: No such file or directory
 check_type dxva2api.h DXVA_PictureParameters wDecodedPictureIndex
 check_cc
-BEGIN /tmp/ffconf.HvMtQqff.c
+BEGIN /tmp/ffconf.QGeVZkZA.c
     1	
     2	#include <dxva2api.h>
     3	const void *p = &((DXVA_PictureParameters *)0)->wDecodedPictureIndex;
-END /tmp/ffconf.HvMtQqff.c
-arm-linux-androideabi-gcc --sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -c -o /tmp/ffconf.oPMWktED.o /tmp/ffconf.HvMtQqff.c
-/tmp/ffconf.HvMtQqff.c:2:22: error: dxva2api.h: No such file or directory
-/tmp/ffconf.HvMtQqff.c:3: error: 'DXVA_PictureParameters' undeclared here (not in a function)
-/tmp/ffconf.HvMtQqff.c:3: error: expected expression before ')' token
+END /tmp/ffconf.QGeVZkZA.c
+arm-linux-androideabi-gcc --sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -c -o /tmp/ffconf.A1355Kwc.o /tmp/ffconf.QGeVZkZA.c
+/tmp/ffconf.QGeVZkZA.c:2:22: error: dxva2api.h: No such file or directory
+/tmp/ffconf.QGeVZkZA.c:3: error: 'DXVA_PictureParameters' undeclared here (not in a function)
+/tmp/ffconf.QGeVZkZA.c:3: error: expected expression before ')' token
 check_lib zlib.h zlibVersion -lz
 check_header zlib.h
 check_cpp
-BEGIN /tmp/ffconf.HvMtQqff.c
+BEGIN /tmp/ffconf.QGeVZkZA.c
     1	#include <zlib.h>
     2	int x;
-END /tmp/ffconf.HvMtQqff.c
-arm-linux-androideabi-gcc --sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -E -o /tmp/ffconf.oPMWktED.o /tmp/ffconf.HvMtQqff.c
+END /tmp/ffconf.QGeVZkZA.c
+arm-linux-androideabi-gcc --sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -E -o /tmp/ffconf.A1355Kwc.o /tmp/ffconf.QGeVZkZA.c
 check_func zlibVersion -lz
 check_ld -lz
 check_cc
-BEGIN /tmp/ffconf.HvMtQqff.c
+BEGIN /tmp/ffconf.QGeVZkZA.c
     1	extern int zlibVersion();
     2	int main(void){ zlibVersion(); }
-END /tmp/ffconf.HvMtQqff.c
-arm-linux-androideabi-gcc --sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -c -o /tmp/ffconf.oPMWktED.o /tmp/ffconf.HvMtQqff.c
-arm-linux-androideabi-gcc --sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm -o /tmp/ffconf.2gliO7Ag /tmp/ffconf.oPMWktED.o -lz
+END /tmp/ffconf.QGeVZkZA.c
+arm-linux-androideabi-gcc --sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -c -o /tmp/ffconf.A1355Kwc.o /tmp/ffconf.QGeVZkZA.c
+arm-linux-androideabi-gcc --sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm -o /tmp/ffconf.ErYg6zYM /tmp/ffconf.A1355Kwc.o -lz
 check_lib2 bzlib.h BZ2_bzlibVersion -lbz2
 check_func_headers bzlib.h BZ2_bzlibVersion -lbz2
 check_ld -lbz2
 check_cc
-BEGIN /tmp/ffconf.HvMtQqff.c
+BEGIN /tmp/ffconf.QGeVZkZA.c
     1	
     2	#include <bzlib.h>
     3	int main(int argc, char **argv){
     4	    return (long) BZ2_bzlibVersion;
     5	}
-END /tmp/ffconf.HvMtQqff.c
-arm-linux-androideabi-gcc --sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -c -o /tmp/ffconf.oPMWktED.o /tmp/ffconf.HvMtQqff.c
-/tmp/ffconf.HvMtQqff.c:2:19: error: bzlib.h: No such file or directory
-/tmp/ffconf.HvMtQqff.c: In function 'main':
-/tmp/ffconf.HvMtQqff.c:4: error: 'BZ2_bzlibVersion' undeclared (first use in this function)
-/tmp/ffconf.HvMtQqff.c:4: error: (Each undeclared identifier is reported only once
-/tmp/ffconf.HvMtQqff.c:4: error: for each function it appears in.)
+END /tmp/ffconf.QGeVZkZA.c
+arm-linux-androideabi-gcc --sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -c -o /tmp/ffconf.A1355Kwc.o /tmp/ffconf.QGeVZkZA.c
+/tmp/ffconf.QGeVZkZA.c:2:19: error: bzlib.h: No such file or directory
+/tmp/ffconf.QGeVZkZA.c: In function 'main':
+/tmp/ffconf.QGeVZkZA.c:4: error: 'BZ2_bzlibVersion' undeclared (first use in this function)
+/tmp/ffconf.QGeVZkZA.c:4: error: (Each undeclared identifier is reported only once
+/tmp/ffconf.QGeVZkZA.c:4: error: for each function it appears in.)
 check_func pthread_create
 check_ld
 check_cc
-BEGIN /tmp/ffconf.HvMtQqff.c
+BEGIN /tmp/ffconf.QGeVZkZA.c
     1	extern int pthread_create();
     2	int main(void){ pthread_create(); }
-END /tmp/ffconf.HvMtQqff.c
-arm-linux-androideabi-gcc --sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -c -o /tmp/ffconf.oPMWktED.o /tmp/ffconf.HvMtQqff.c
-arm-linux-androideabi-gcc --sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm -o /tmp/ffconf.2gliO7Ag /tmp/ffconf.oPMWktED.o -lz
+END /tmp/ffconf.QGeVZkZA.c
+arm-linux-androideabi-gcc --sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -c -o /tmp/ffconf.A1355Kwc.o /tmp/ffconf.QGeVZkZA.c
+arm-linux-androideabi-gcc --sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm -o /tmp/ffconf.ErYg6zYM /tmp/ffconf.A1355Kwc.o -lz
 check_lib math.h sin -lm
 check_header math.h
 check_cpp
-BEGIN /tmp/ffconf.HvMtQqff.c
+BEGIN /tmp/ffconf.QGeVZkZA.c
     1	#include <math.h>
     2	int x;
-END /tmp/ffconf.HvMtQqff.c
-arm-linux-androideabi-gcc --sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -E -o /tmp/ffconf.oPMWktED.o /tmp/ffconf.HvMtQqff.c
+END /tmp/ffconf.QGeVZkZA.c
+arm-linux-androideabi-gcc --sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -E -o /tmp/ffconf.A1355Kwc.o /tmp/ffconf.QGeVZkZA.c
 check_func sin -lm
 check_ld -lm
 check_cc
-BEGIN /tmp/ffconf.HvMtQqff.c
+BEGIN /tmp/ffconf.QGeVZkZA.c
     1	extern int sin();
     2	int main(void){ sin(); }
-END /tmp/ffconf.HvMtQqff.c
-arm-linux-androideabi-gcc --sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -c -o /tmp/ffconf.oPMWktED.o /tmp/ffconf.HvMtQqff.c
-/tmp/ffconf.HvMtQqff.c:1: warning: conflicting types for built-in function 'sin'
-arm-linux-androideabi-gcc --sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm -o /tmp/ffconf.2gliO7Ag /tmp/ffconf.oPMWktED.o -lz -lm
+END /tmp/ffconf.QGeVZkZA.c
+arm-linux-androideabi-gcc --sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -c -o /tmp/ffconf.A1355Kwc.o /tmp/ffconf.QGeVZkZA.c
+/tmp/ffconf.QGeVZkZA.c:1: warning: conflicting types for built-in function 'sin'
+arm-linux-androideabi-gcc --sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm -o /tmp/ffconf.ErYg6zYM /tmp/ffconf.A1355Kwc.o -lz -lm
 check_lib va/va.h vaInitialize -lva
 check_header va/va.h
 check_cpp
-BEGIN /tmp/ffconf.HvMtQqff.c
+BEGIN /tmp/ffconf.QGeVZkZA.c
     1	#include <va/va.h>
     2	int x;
-END /tmp/ffconf.HvMtQqff.c
-arm-linux-androideabi-gcc --sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -E -o /tmp/ffconf.oPMWktED.o /tmp/ffconf.HvMtQqff.c
-/tmp/ffconf.HvMtQqff.c:1:19: error: va/va.h: No such file or directory
+END /tmp/ffconf.QGeVZkZA.c
+arm-linux-androideabi-gcc --sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -E -o /tmp/ffconf.A1355Kwc.o /tmp/ffconf.QGeVZkZA.c
+/tmp/ffconf.QGeVZkZA.c:1:19: error: va/va.h: No such file or directory
 check_mathfunc exp2
 check_ld
 check_cc
-BEGIN /tmp/ffconf.HvMtQqff.c
+BEGIN /tmp/ffconf.QGeVZkZA.c
     1	#include <math.h>
     2	float foo(float f) { return exp2(f); }
     3	int main(void){ return 0; }
-END /tmp/ffconf.HvMtQqff.c
-arm-linux-androideabi-gcc --sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -c -o /tmp/ffconf.oPMWktED.o /tmp/ffconf.HvMtQqff.c
-arm-linux-androideabi-gcc --sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm -o /tmp/ffconf.2gliO7Ag /tmp/ffconf.oPMWktED.o -lm -lz
+END /tmp/ffconf.QGeVZkZA.c
+arm-linux-androideabi-gcc --sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -c -o /tmp/ffconf.A1355Kwc.o /tmp/ffconf.QGeVZkZA.c
+arm-linux-androideabi-gcc --sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm -o /tmp/ffconf.ErYg6zYM /tmp/ffconf.A1355Kwc.o -lm -lz
 check_mathfunc exp2f
 check_ld
 check_cc
-BEGIN /tmp/ffconf.HvMtQqff.c
+BEGIN /tmp/ffconf.QGeVZkZA.c
     1	#include <math.h>
     2	float foo(float f) { return exp2f(f); }
     3	int main(void){ return 0; }
-END /tmp/ffconf.HvMtQqff.c
-arm-linux-androideabi-gcc --sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -c -o /tmp/ffconf.oPMWktED.o /tmp/ffconf.HvMtQqff.c
-arm-linux-androideabi-gcc --sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm -o /tmp/ffconf.2gliO7Ag /tmp/ffconf.oPMWktED.o -lm -lz
+END /tmp/ffconf.QGeVZkZA.c
+arm-linux-androideabi-gcc --sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -c -o /tmp/ffconf.A1355Kwc.o /tmp/ffconf.QGeVZkZA.c
+arm-linux-androideabi-gcc --sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm -o /tmp/ffconf.ErYg6zYM /tmp/ffconf.A1355Kwc.o -lm -lz
 check_mathfunc llrint
 check_ld
 check_cc
-BEGIN /tmp/ffconf.HvMtQqff.c
+BEGIN /tmp/ffconf.QGeVZkZA.c
     1	#include <math.h>
     2	float foo(float f) { return llrint(f); }
     3	int main(void){ return 0; }
-END /tmp/ffconf.HvMtQqff.c
-arm-linux-androideabi-gcc --sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -c -o /tmp/ffconf.oPMWktED.o /tmp/ffconf.HvMtQqff.c
-arm-linux-androideabi-gcc --sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm -o /tmp/ffconf.2gliO7Ag /tmp/ffconf.oPMWktED.o -lm -lz
+END /tmp/ffconf.QGeVZkZA.c
+arm-linux-androideabi-gcc --sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -c -o /tmp/ffconf.A1355Kwc.o /tmp/ffconf.QGeVZkZA.c
+arm-linux-androideabi-gcc --sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm -o /tmp/ffconf.ErYg6zYM /tmp/ffconf.A1355Kwc.o -lm -lz
 check_mathfunc llrintf
 check_ld
 check_cc
-BEGIN /tmp/ffconf.HvMtQqff.c
+BEGIN /tmp/ffconf.QGeVZkZA.c
     1	#include <math.h>
     2	float foo(float f) { return llrintf(f); }
     3	int main(void){ return 0; }
-END /tmp/ffconf.HvMtQqff.c
-arm-linux-androideabi-gcc --sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -c -o /tmp/ffconf.oPMWktED.o /tmp/ffconf.HvMtQqff.c
-arm-linux-androideabi-gcc --sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm -o /tmp/ffconf.2gliO7Ag /tmp/ffconf.oPMWktED.o -lm -lz
+END /tmp/ffconf.QGeVZkZA.c
+arm-linux-androideabi-gcc --sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -c -o /tmp/ffconf.A1355Kwc.o /tmp/ffconf.QGeVZkZA.c
+arm-linux-androideabi-gcc --sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm -o /tmp/ffconf.ErYg6zYM /tmp/ffconf.A1355Kwc.o -lm -lz
 check_mathfunc log2
 check_ld
 check_cc
-BEGIN /tmp/ffconf.HvMtQqff.c
+BEGIN /tmp/ffconf.QGeVZkZA.c
     1	#include <math.h>
     2	float foo(float f) { return log2(f); }
     3	int main(void){ return 0; }
-END /tmp/ffconf.HvMtQqff.c
-arm-linux-androideabi-gcc --sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -c -o /tmp/ffconf.oPMWktED.o /tmp/ffconf.HvMtQqff.c
-/tmp/ffconf.HvMtQqff.c: In function 'foo':
-/tmp/ffconf.HvMtQqff.c:2: warning: implicit declaration of function 'log2'
-/tmp/ffconf.HvMtQqff.c:2: warning: incompatible implicit declaration of built-in function 'log2'
-arm-linux-androideabi-gcc --sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm -o /tmp/ffconf.2gliO7Ag /tmp/ffconf.oPMWktED.o -lm -lz
-/tmp/ffconf.oPMWktED.o: In function `foo':
-ffconf.HvMtQqff.c:(.text+0x18): undefined reference to `log2'
+END /tmp/ffconf.QGeVZkZA.c
+arm-linux-androideabi-gcc --sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -c -o /tmp/ffconf.A1355Kwc.o /tmp/ffconf.QGeVZkZA.c
+/tmp/ffconf.QGeVZkZA.c: In function 'foo':
+/tmp/ffconf.QGeVZkZA.c:2: warning: implicit declaration of function 'log2'
+/tmp/ffconf.QGeVZkZA.c:2: warning: incompatible implicit declaration of built-in function 'log2'
+arm-linux-androideabi-gcc --sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm -o /tmp/ffconf.ErYg6zYM /tmp/ffconf.A1355Kwc.o -lm -lz
+/tmp/ffconf.A1355Kwc.o: In function `foo':
+ffconf.QGeVZkZA.c:(.text+0x18): undefined reference to `log2'
 collect2: ld returned 1 exit status
 check_mathfunc log2f
 check_ld
 check_cc
-BEGIN /tmp/ffconf.HvMtQqff.c
+BEGIN /tmp/ffconf.QGeVZkZA.c
     1	#include <math.h>
     2	float foo(float f) { return log2f(f); }
     3	int main(void){ return 0; }
-END /tmp/ffconf.HvMtQqff.c
-arm-linux-androideabi-gcc --sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -c -o /tmp/ffconf.oPMWktED.o /tmp/ffconf.HvMtQqff.c
-/tmp/ffconf.HvMtQqff.c: In function 'foo':
-/tmp/ffconf.HvMtQqff.c:2: warning: implicit declaration of function 'log2f'
-/tmp/ffconf.HvMtQqff.c:2: warning: incompatible implicit declaration of built-in function 'log2f'
-arm-linux-androideabi-gcc --sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm -o /tmp/ffconf.2gliO7Ag /tmp/ffconf.oPMWktED.o -lm -lz
-/tmp/ffconf.oPMWktED.o: In function `foo':
-ffconf.HvMtQqff.c:(.text+0x10): undefined reference to `log2f'
+END /tmp/ffconf.QGeVZkZA.c
+arm-linux-androideabi-gcc --sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -c -o /tmp/ffconf.A1355Kwc.o /tmp/ffconf.QGeVZkZA.c
+/tmp/ffconf.QGeVZkZA.c: In function 'foo':
+/tmp/ffconf.QGeVZkZA.c:2: warning: implicit declaration of function 'log2f'
+/tmp/ffconf.QGeVZkZA.c:2: warning: incompatible implicit declaration of built-in function 'log2f'
+arm-linux-androideabi-gcc --sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm -o /tmp/ffconf.ErYg6zYM /tmp/ffconf.A1355Kwc.o -lm -lz
+/tmp/ffconf.A1355Kwc.o: In function `foo':
+ffconf.QGeVZkZA.c:(.text+0x10): undefined reference to `log2f'
 collect2: ld returned 1 exit status
 check_mathfunc lrint
 check_ld
 check_cc
-BEGIN /tmp/ffconf.HvMtQqff.c
+BEGIN /tmp/ffconf.QGeVZkZA.c
     1	#include <math.h>
     2	float foo(float f) { return lrint(f); }
     3	int main(void){ return 0; }
-END /tmp/ffconf.HvMtQqff.c
-arm-linux-androideabi-gcc --sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -c -o /tmp/ffconf.oPMWktED.o /tmp/ffconf.HvMtQqff.c
-arm-linux-androideabi-gcc --sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm -o /tmp/ffconf.2gliO7Ag /tmp/ffconf.oPMWktED.o -lm -lz
+END /tmp/ffconf.QGeVZkZA.c
+arm-linux-androideabi-gcc --sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -c -o /tmp/ffconf.A1355Kwc.o /tmp/ffconf.QGeVZkZA.c
+arm-linux-androideabi-gcc --sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm -o /tmp/ffconf.ErYg6zYM /tmp/ffconf.A1355Kwc.o -lm -lz
 check_mathfunc lrintf
 check_ld
 check_cc
-BEGIN /tmp/ffconf.HvMtQqff.c
+BEGIN /tmp/ffconf.QGeVZkZA.c
     1	#include <math.h>
     2	float foo(float f) { return lrintf(f); }
     3	int main(void){ return 0; }
-END /tmp/ffconf.HvMtQqff.c
-arm-linux-androideabi-gcc --sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -c -o /tmp/ffconf.oPMWktED.o /tmp/ffconf.HvMtQqff.c
-arm-linux-androideabi-gcc --sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm -o /tmp/ffconf.2gliO7Ag /tmp/ffconf.oPMWktED.o -lm -lz
+END /tmp/ffconf.QGeVZkZA.c
+arm-linux-androideabi-gcc --sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -c -o /tmp/ffconf.A1355Kwc.o /tmp/ffconf.QGeVZkZA.c
+arm-linux-androideabi-gcc --sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm -o /tmp/ffconf.ErYg6zYM /tmp/ffconf.A1355Kwc.o -lm -lz
 check_mathfunc round
 check_ld
 check_cc
-BEGIN /tmp/ffconf.HvMtQqff.c
+BEGIN /tmp/ffconf.QGeVZkZA.c
     1	#include <math.h>
     2	float foo(float f) { return round(f); }
     3	int main(void){ return 0; }
-END /tmp/ffconf.HvMtQqff.c
-arm-linux-androideabi-gcc --sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -c -o /tmp/ffconf.oPMWktED.o /tmp/ffconf.HvMtQqff.c
-arm-linux-androideabi-gcc --sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm -o /tmp/ffconf.2gliO7Ag /tmp/ffconf.oPMWktED.o -lm -lz
+END /tmp/ffconf.QGeVZkZA.c
+arm-linux-androideabi-gcc --sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -c -o /tmp/ffconf.A1355Kwc.o /tmp/ffconf.QGeVZkZA.c
+arm-linux-androideabi-gcc --sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm -o /tmp/ffconf.ErYg6zYM /tmp/ffconf.A1355Kwc.o -lm -lz
 check_mathfunc roundf
 check_ld
 check_cc
-BEGIN /tmp/ffconf.HvMtQqff.c
+BEGIN /tmp/ffconf.QGeVZkZA.c
     1	#include <math.h>
     2	float foo(float f) { return roundf(f); }
     3	int main(void){ return 0; }
-END /tmp/ffconf.HvMtQqff.c
-arm-linux-androideabi-gcc --sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -c -o /tmp/ffconf.oPMWktED.o /tmp/ffconf.HvMtQqff.c
-arm-linux-androideabi-gcc --sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm -o /tmp/ffconf.2gliO7Ag /tmp/ffconf.oPMWktED.o -lm -lz
+END /tmp/ffconf.QGeVZkZA.c
+arm-linux-androideabi-gcc --sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -c -o /tmp/ffconf.A1355Kwc.o /tmp/ffconf.QGeVZkZA.c
+arm-linux-androideabi-gcc --sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm -o /tmp/ffconf.ErYg6zYM /tmp/ffconf.A1355Kwc.o -lm -lz
 check_mathfunc truncf
 check_ld
 check_cc
-BEGIN /tmp/ffconf.HvMtQqff.c
+BEGIN /tmp/ffconf.QGeVZkZA.c
     1	#include <math.h>
     2	float foo(float f) { return truncf(f); }
     3	int main(void){ return 0; }
-END /tmp/ffconf.HvMtQqff.c
-arm-linux-androideabi-gcc --sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -c -o /tmp/ffconf.oPMWktED.o /tmp/ffconf.HvMtQqff.c
-arm-linux-androideabi-gcc --sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm -o /tmp/ffconf.2gliO7Ag /tmp/ffconf.oPMWktED.o -lm -lz
+END /tmp/ffconf.QGeVZkZA.c
+arm-linux-androideabi-gcc --sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -c -o /tmp/ffconf.A1355Kwc.o /tmp/ffconf.QGeVZkZA.c
+arm-linux-androideabi-gcc --sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm -o /tmp/ffconf.ErYg6zYM /tmp/ffconf.A1355Kwc.o -lm -lz
 check_header linux/videodev.h
 check_cpp
-BEGIN /tmp/ffconf.HvMtQqff.c
+BEGIN /tmp/ffconf.QGeVZkZA.c
     1	#include <linux/videodev.h>
     2	int x;
-END /tmp/ffconf.HvMtQqff.c
-arm-linux-androideabi-gcc --sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -E -o /tmp/ffconf.oPMWktED.o /tmp/ffconf.HvMtQqff.c
+END /tmp/ffconf.QGeVZkZA.c
+arm-linux-androideabi-gcc --sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -E -o /tmp/ffconf.A1355Kwc.o /tmp/ffconf.QGeVZkZA.c
 check_header linux/videodev2.h
 check_cpp
-BEGIN /tmp/ffconf.HvMtQqff.c
+BEGIN /tmp/ffconf.QGeVZkZA.c
     1	#include <linux/videodev2.h>
     2	int x;
-END /tmp/ffconf.HvMtQqff.c
-arm-linux-androideabi-gcc --sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -E -o /tmp/ffconf.oPMWktED.o /tmp/ffconf.HvMtQqff.c
+END /tmp/ffconf.QGeVZkZA.c
+arm-linux-androideabi-gcc --sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -E -o /tmp/ffconf.A1355Kwc.o /tmp/ffconf.QGeVZkZA.c
 check_header sys/videoio.h
 check_cpp
-BEGIN /tmp/ffconf.HvMtQqff.c
+BEGIN /tmp/ffconf.QGeVZkZA.c
     1	#include <sys/videoio.h>
     2	int x;
-END /tmp/ffconf.HvMtQqff.c
-arm-linux-androideabi-gcc --sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -E -o /tmp/ffconf.oPMWktED.o /tmp/ffconf.HvMtQqff.c
-/tmp/ffconf.HvMtQqff.c:1:25: error: sys/videoio.h: No such file or directory
+END /tmp/ffconf.QGeVZkZA.c
+arm-linux-androideabi-gcc --sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -E -o /tmp/ffconf.A1355Kwc.o /tmp/ffconf.QGeVZkZA.c
+/tmp/ffconf.QGeVZkZA.c:1:25: error: sys/videoio.h: No such file or directory
 check_func_headers windows.h vfw.h capCreateCaptureWindow -lavicap32
 check_ld -lavicap32
 check_cc
-BEGIN /tmp/ffconf.HvMtQqff.c
+BEGIN /tmp/ffconf.QGeVZkZA.c
     1	
     2	#include <windows.h>
     3	#include <vfw.h>
     4	int main(int argc, char **argv){
     5	    return (long) capCreateCaptureWindow;
     6	}
-END /tmp/ffconf.HvMtQqff.c
-arm-linux-androideabi-gcc --sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -c -o /tmp/ffconf.oPMWktED.o /tmp/ffconf.HvMtQqff.c
-/tmp/ffconf.HvMtQqff.c:2:21: error: windows.h: No such file or directory
-/tmp/ffconf.HvMtQqff.c:3:17: error: vfw.h: No such file or directory
-/tmp/ffconf.HvMtQqff.c: In function 'main':
-/tmp/ffconf.HvMtQqff.c:5: error: 'capCreateCaptureWindow' undeclared (first use in this function)
-/tmp/ffconf.HvMtQqff.c:5: error: (Each undeclared identifier is reported only once
-/tmp/ffconf.HvMtQqff.c:5: error: for each function it appears in.)
+END /tmp/ffconf.QGeVZkZA.c
+arm-linux-androideabi-gcc --sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -c -o /tmp/ffconf.A1355Kwc.o /tmp/ffconf.QGeVZkZA.c
+/tmp/ffconf.QGeVZkZA.c:2:21: error: windows.h: No such file or directory
+/tmp/ffconf.QGeVZkZA.c:3:17: error: vfw.h: No such file or directory
+/tmp/ffconf.QGeVZkZA.c: In function 'main':
+/tmp/ffconf.QGeVZkZA.c:5: error: 'capCreateCaptureWindow' undeclared (first use in this function)
+/tmp/ffconf.QGeVZkZA.c:5: error: (Each undeclared identifier is reported only once
+/tmp/ffconf.QGeVZkZA.c:5: error: for each function it appears in.)
 check_cpp_condition vfw.h WM_CAP_DRIVER_CONNECT > WM_USER
 check_cpp
-BEGIN /tmp/ffconf.HvMtQqff.c
+BEGIN /tmp/ffconf.QGeVZkZA.c
     1	#include <vfw.h>
     2	#if !(WM_CAP_DRIVER_CONNECT > WM_USER)
     3	#error "unsatisfied condition: WM_CAP_DRIVER_CONNECT > WM_USER"
     4	#endif
-END /tmp/ffconf.HvMtQqff.c
-arm-linux-androideabi-gcc --sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -E -o /tmp/ffconf.oPMWktED.o /tmp/ffconf.HvMtQqff.c
-/tmp/ffconf.HvMtQqff.c:1:17: error: vfw.h: No such file or directory
-/tmp/ffconf.HvMtQqff.c:3:2: error: #error "unsatisfied condition: WM_CAP_DRIVER_CONNECT > WM_USER"
+END /tmp/ffconf.QGeVZkZA.c
+arm-linux-androideabi-gcc --sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -E -o /tmp/ffconf.A1355Kwc.o /tmp/ffconf.QGeVZkZA.c
+/tmp/ffconf.QGeVZkZA.c:1:17: error: vfw.h: No such file or directory
+/tmp/ffconf.QGeVZkZA.c:3:2: error: #error "unsatisfied condition: WM_CAP_DRIVER_CONNECT > WM_USER"
 check_header dev/bktr/ioctl_meteor.h
 check_cpp
-BEGIN /tmp/ffconf.HvMtQqff.c
+BEGIN /tmp/ffconf.QGeVZkZA.c
     1	#include <dev/bktr/ioctl_meteor.h>
     2	int x;
-END /tmp/ffconf.HvMtQqff.c
-arm-linux-androideabi-gcc --sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -E -o /tmp/ffconf.oPMWktED.o /tmp/ffconf.HvMtQqff.c
-/tmp/ffconf.HvMtQqff.c:1:35: error: dev/bktr/ioctl_meteor.h: No such file or directory
+END /tmp/ffconf.QGeVZkZA.c
+arm-linux-androideabi-gcc --sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -E -o /tmp/ffconf.A1355Kwc.o /tmp/ffconf.QGeVZkZA.c
+/tmp/ffconf.QGeVZkZA.c:1:35: error: dev/bktr/ioctl_meteor.h: No such file or directory
 check_header machine/ioctl_meteor.h
 check_cpp
-BEGIN /tmp/ffconf.HvMtQqff.c
+BEGIN /tmp/ffconf.QGeVZkZA.c
     1	#include <machine/ioctl_meteor.h>
     2	int x;
-END /tmp/ffconf.HvMtQqff.c
-arm-linux-androideabi-gcc --sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -E -o /tmp/ffconf.oPMWktED.o /tmp/ffconf.HvMtQqff.c
-/tmp/ffconf.HvMtQqff.c:1:34: error: machine/ioctl_meteor.h: No such file or directory
+END /tmp/ffconf.QGeVZkZA.c
+arm-linux-androideabi-gcc --sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -E -o /tmp/ffconf.A1355Kwc.o /tmp/ffconf.QGeVZkZA.c
+/tmp/ffconf.QGeVZkZA.c:1:34: error: machine/ioctl_meteor.h: No such file or directory
 check_header dev/video/meteor/ioctl_meteor.h
 check_cpp
-BEGIN /tmp/ffconf.HvMtQqff.c
+BEGIN /tmp/ffconf.QGeVZkZA.c
     1	#include <dev/video/meteor/ioctl_meteor.h>
     2	int x;
-END /tmp/ffconf.HvMtQqff.c
-arm-linux-androideabi-gcc --sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -E -o /tmp/ffconf.oPMWktED.o /tmp/ffconf.HvMtQqff.c
-/tmp/ffconf.HvMtQqff.c:1:43: error: dev/video/meteor/ioctl_meteor.h: No such file or directory
+END /tmp/ffconf.QGeVZkZA.c
+arm-linux-androideabi-gcc --sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -E -o /tmp/ffconf.A1355Kwc.o /tmp/ffconf.QGeVZkZA.c
+/tmp/ffconf.QGeVZkZA.c:1:43: error: dev/video/meteor/ioctl_meteor.h: No such file or directory
 check_header dev/ic/bt8xx.h
 check_cpp
-BEGIN /tmp/ffconf.HvMtQqff.c
+BEGIN /tmp/ffconf.QGeVZkZA.c
     1	#include <dev/ic/bt8xx.h>
     2	int x;
-END /tmp/ffconf.HvMtQqff.c
-arm-linux-androideabi-gcc --sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -E -o /tmp/ffconf.oPMWktED.o /tmp/ffconf.HvMtQqff.c
-/tmp/ffconf.HvMtQqff.c:1:26: error: dev/ic/bt8xx.h: No such file or directory
+END /tmp/ffconf.QGeVZkZA.c
+arm-linux-androideabi-gcc --sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -E -o /tmp/ffconf.A1355Kwc.o /tmp/ffconf.QGeVZkZA.c
+/tmp/ffconf.QGeVZkZA.c:1:26: error: dev/ic/bt8xx.h: No such file or directory
 check_header sys/soundcard.h
 check_cpp
-BEGIN /tmp/ffconf.HvMtQqff.c
+BEGIN /tmp/ffconf.QGeVZkZA.c
     1	#include <sys/soundcard.h>
     2	int x;
-END /tmp/ffconf.HvMtQqff.c
-arm-linux-androideabi-gcc --sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -E -o /tmp/ffconf.oPMWktED.o /tmp/ffconf.HvMtQqff.c
-/tmp/ffconf.HvMtQqff.c:1:27: error: sys/soundcard.h: No such file or directory
+END /tmp/ffconf.QGeVZkZA.c
+arm-linux-androideabi-gcc --sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -E -o /tmp/ffconf.A1355Kwc.o /tmp/ffconf.QGeVZkZA.c
+/tmp/ffconf.QGeVZkZA.c:1:27: error: sys/soundcard.h: No such file or directory
 check_header soundcard.h
 check_cpp
-BEGIN /tmp/ffconf.HvMtQqff.c
+BEGIN /tmp/ffconf.QGeVZkZA.c
     1	#include <soundcard.h>
     2	int x;
-END /tmp/ffconf.HvMtQqff.c
-arm-linux-androideabi-gcc --sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -E -o /tmp/ffconf.oPMWktED.o /tmp/ffconf.HvMtQqff.c
-/tmp/ffconf.HvMtQqff.c:1:23: error: soundcard.h: No such file or directory
+END /tmp/ffconf.QGeVZkZA.c
+arm-linux-androideabi-gcc --sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -E -o /tmp/ffconf.A1355Kwc.o /tmp/ffconf.QGeVZkZA.c
+/tmp/ffconf.QGeVZkZA.c:1:23: error: soundcard.h: No such file or directory
 check_cflags -Wdeclaration-after-statement
 check_cc -Wdeclaration-after-statement
-BEGIN /tmp/ffconf.HvMtQqff.c
+BEGIN /tmp/ffconf.QGeVZkZA.c
     1	int x;
-END /tmp/ffconf.HvMtQqff.c
-arm-linux-androideabi-gcc --sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -g -Wdeclaration-after-statement -c -o /tmp/ffconf.oPMWktED.o /tmp/ffconf.HvMtQqff.c
+END /tmp/ffconf.QGeVZkZA.c
+arm-linux-androideabi-gcc --sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -g -Wdeclaration-after-statement -c -o /tmp/ffconf.A1355Kwc.o /tmp/ffconf.QGeVZkZA.c
 check_cflags -Wall
 check_cc -Wall
-BEGIN /tmp/ffconf.HvMtQqff.c
+BEGIN /tmp/ffconf.QGeVZkZA.c
     1	int x;
-END /tmp/ffconf.HvMtQqff.c
-arm-linux-androideabi-gcc --sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -g -Wdeclaration-after-statement -Wall -c -o /tmp/ffconf.oPMWktED.o /tmp/ffconf.HvMtQqff.c
+END /tmp/ffconf.QGeVZkZA.c
+arm-linux-androideabi-gcc --sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -g -Wdeclaration-after-statement -Wall -c -o /tmp/ffconf.A1355Kwc.o /tmp/ffconf.QGeVZkZA.c
 check_cflags -Wno-parentheses
 check_cc -Wno-parentheses
-BEGIN /tmp/ffconf.HvMtQqff.c
+BEGIN /tmp/ffconf.QGeVZkZA.c
     1	int x;
-END /tmp/ffconf.HvMtQqff.c
-arm-linux-androideabi-gcc --sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -g -Wdeclaration-after-statement -Wall -Wno-parentheses -c -o /tmp/ffconf.oPMWktED.o /tmp/ffconf.HvMtQqff.c
+END /tmp/ffconf.QGeVZkZA.c
+arm-linux-androideabi-gcc --sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -g -Wdeclaration-after-statement -Wall -Wno-parentheses -c -o /tmp/ffconf.A1355Kwc.o /tmp/ffconf.QGeVZkZA.c
 check_cflags -Wno-switch
 check_cc -Wno-switch
-BEGIN /tmp/ffconf.HvMtQqff.c
+BEGIN /tmp/ffconf.QGeVZkZA.c
     1	int x;
-END /tmp/ffconf.HvMtQqff.c
-arm-linux-androideabi-gcc --sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -g -Wdeclaration-after-statement -Wall -Wno-parentheses -Wno-switch -c -o /tmp/ffconf.oPMWktED.o /tmp/ffconf.HvMtQqff.c
+END /tmp/ffconf.QGeVZkZA.c
+arm-linux-androideabi-gcc --sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -g -Wdeclaration-after-statement -Wall -Wno-parentheses -Wno-switch -c -o /tmp/ffconf.A1355Kwc.o /tmp/ffconf.QGeVZkZA.c
 check_cflags -Wdisabled-optimization
 check_cc -Wdisabled-optimization
-BEGIN /tmp/ffconf.HvMtQqff.c
+BEGIN /tmp/ffconf.QGeVZkZA.c
     1	int x;
-END /tmp/ffconf.HvMtQqff.c
-arm-linux-androideabi-gcc --sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -g -Wdeclaration-after-statement -Wall -Wno-parentheses -Wno-switch -Wdisabled-optimization -c -o /tmp/ffconf.oPMWktED.o /tmp/ffconf.HvMtQqff.c
+END /tmp/ffconf.QGeVZkZA.c
+arm-linux-androideabi-gcc --sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -g -Wdeclaration-after-statement -Wall -Wno-parentheses -Wno-switch -Wdisabled-optimization -c -o /tmp/ffconf.A1355Kwc.o /tmp/ffconf.QGeVZkZA.c
 check_cflags -Wpointer-arith
 check_cc -Wpointer-arith
-BEGIN /tmp/ffconf.HvMtQqff.c
+BEGIN /tmp/ffconf.QGeVZkZA.c
     1	int x;
-END /tmp/ffconf.HvMtQqff.c
-arm-linux-androideabi-gcc --sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -g -Wdeclaration-after-statement -Wall -Wno-parentheses -Wno-switch -Wdisabled-optimization -Wpointer-arith -c -o /tmp/ffconf.oPMWktED.o /tmp/ffconf.HvMtQqff.c
+END /tmp/ffconf.QGeVZkZA.c
+arm-linux-androideabi-gcc --sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -g -Wdeclaration-after-statement -Wall -Wno-parentheses -Wno-switch -Wdisabled-optimization -Wpointer-arith -c -o /tmp/ffconf.A1355Kwc.o /tmp/ffconf.QGeVZkZA.c
 check_cflags -Wredundant-decls
 check_cc -Wredundant-decls
-BEGIN /tmp/ffconf.HvMtQqff.c
+BEGIN /tmp/ffconf.QGeVZkZA.c
     1	int x;
-END /tmp/ffconf.HvMtQqff.c
-arm-linux-androideabi-gcc --sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -g -Wdeclaration-after-statement -Wall -Wno-parentheses -Wno-switch -Wdisabled-optimization -Wpointer-arith -Wredundant-decls -c -o /tmp/ffconf.oPMWktED.o /tmp/ffconf.HvMtQqff.c
+END /tmp/ffconf.QGeVZkZA.c
+arm-linux-androideabi-gcc --sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -g -Wdeclaration-after-statement -Wall -Wno-parentheses -Wno-switch -Wdisabled-optimization -Wpointer-arith -Wredundant-decls -c -o /tmp/ffconf.A1355Kwc.o /tmp/ffconf.QGeVZkZA.c
 check_cflags -Wno-pointer-sign
 check_cc -Wno-pointer-sign
-BEGIN /tmp/ffconf.HvMtQqff.c
+BEGIN /tmp/ffconf.QGeVZkZA.c
     1	int x;
-END /tmp/ffconf.HvMtQqff.c
-arm-linux-androideabi-gcc --sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -g -Wdeclaration-after-statement -Wall -Wno-parentheses -Wno-switch -Wdisabled-optimization -Wpointer-arith -Wredundant-decls -Wno-pointer-sign -c -o /tmp/ffconf.oPMWktED.o /tmp/ffconf.HvMtQqff.c
+END /tmp/ffconf.QGeVZkZA.c
+arm-linux-androideabi-gcc --sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -g -Wdeclaration-after-statement -Wall -Wno-parentheses -Wno-switch -Wdisabled-optimization -Wpointer-arith -Wredundant-decls -Wno-pointer-sign -c -o /tmp/ffconf.A1355Kwc.o /tmp/ffconf.QGeVZkZA.c
 check_cflags -Wcast-qual
 check_cc -Wcast-qual
-BEGIN /tmp/ffconf.HvMtQqff.c
+BEGIN /tmp/ffconf.QGeVZkZA.c
     1	int x;
-END /tmp/ffconf.HvMtQqff.c
-arm-linux-androideabi-gcc --sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -g -Wdeclaration-after-statement -Wall -Wno-parentheses -Wno-switch -Wdisabled-optimization -Wpointer-arith -Wredundant-decls -Wno-pointer-sign -Wcast-qual -c -o /tmp/ffconf.oPMWktED.o /tmp/ffconf.HvMtQqff.c
+END /tmp/ffconf.QGeVZkZA.c
+arm-linux-androideabi-gcc --sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -g -Wdeclaration-after-statement -Wall -Wno-parentheses -Wno-switch -Wdisabled-optimization -Wpointer-arith -Wredundant-decls -Wno-pointer-sign -Wcast-qual -c -o /tmp/ffconf.A1355Kwc.o /tmp/ffconf.QGeVZkZA.c
 check_cflags -Wwrite-strings
 check_cc -Wwrite-strings
-BEGIN /tmp/ffconf.HvMtQqff.c
+BEGIN /tmp/ffconf.QGeVZkZA.c
     1	int x;
-END /tmp/ffconf.HvMtQqff.c
-arm-linux-androideabi-gcc --sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -g -Wdeclaration-after-statement -Wall -Wno-parentheses -Wno-switch -Wdisabled-optimization -Wpointer-arith -Wredundant-decls -Wno-pointer-sign -Wcast-qual -Wwrite-strings -c -o /tmp/ffconf.oPMWktED.o /tmp/ffconf.HvMtQqff.c
+END /tmp/ffconf.QGeVZkZA.c
+arm-linux-androideabi-gcc --sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -g -Wdeclaration-after-statement -Wall -Wno-parentheses -Wno-switch -Wdisabled-optimization -Wpointer-arith -Wredundant-decls -Wno-pointer-sign -Wcast-qual -Wwrite-strings -c -o /tmp/ffconf.A1355Kwc.o /tmp/ffconf.QGeVZkZA.c
 check_cflags -Wtype-limits
 check_cc -Wtype-limits
-BEGIN /tmp/ffconf.HvMtQqff.c
+BEGIN /tmp/ffconf.QGeVZkZA.c
     1	int x;
-END /tmp/ffconf.HvMtQqff.c
-arm-linux-androideabi-gcc --sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -g -Wdeclaration-after-statement -Wall -Wno-parentheses -Wno-switch -Wdisabled-optimization -Wpointer-arith -Wredundant-decls -Wno-pointer-sign -Wcast-qual -Wwrite-strings -Wtype-limits -c -o /tmp/ffconf.oPMWktED.o /tmp/ffconf.HvMtQqff.c
+END /tmp/ffconf.QGeVZkZA.c
+arm-linux-androideabi-gcc --sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -g -Wdeclaration-after-statement -Wall -Wno-parentheses -Wno-switch -Wdisabled-optimization -Wpointer-arith -Wredundant-decls -Wno-pointer-sign -Wcast-qual -Wwrite-strings -Wtype-limits -c -o /tmp/ffconf.A1355Kwc.o /tmp/ffconf.QGeVZkZA.c
 check_cflags -Wundef
 check_cc -Wundef
-BEGIN /tmp/ffconf.HvMtQqff.c
+BEGIN /tmp/ffconf.QGeVZkZA.c
     1	int x;
-END /tmp/ffconf.HvMtQqff.c
-arm-linux-androideabi-gcc --sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -g -Wdeclaration-after-statement -Wall -Wno-parentheses -Wno-switch -Wdisabled-optimization -Wpointer-arith -Wredundant-decls -Wno-pointer-sign -Wcast-qual -Wwrite-strings -Wtype-limits -Wundef -c -o /tmp/ffconf.oPMWktED.o /tmp/ffconf.HvMtQqff.c
+END /tmp/ffconf.QGeVZkZA.c
+arm-linux-androideabi-gcc --sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -g -Wdeclaration-after-statement -Wall -Wno-parentheses -Wno-switch -Wdisabled-optimization -Wpointer-arith -Wredundant-decls -Wno-pointer-sign -Wcast-qual -Wwrite-strings -Wtype-limits -Wundef -c -o /tmp/ffconf.A1355Kwc.o /tmp/ffconf.QGeVZkZA.c
 check_cflags -Wmissing-prototypes
 check_cc -Wmissing-prototypes
-BEGIN /tmp/ffconf.HvMtQqff.c
+BEGIN /tmp/ffconf.QGeVZkZA.c
     1	int x;
-END /tmp/ffconf.HvMtQqff.c
-arm-linux-androideabi-gcc --sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -g -Wdeclaration-after-statement -Wall -Wno-parentheses -Wno-switch -Wdisabled-optimization -Wpointer-arith -Wredundant-decls -Wno-pointer-sign -Wcast-qual -Wwrite-strings -Wtype-limits -Wundef -Wmissing-prototypes -c -o /tmp/ffconf.oPMWktED.o /tmp/ffconf.HvMtQqff.c
+END /tmp/ffconf.QGeVZkZA.c
+arm-linux-androideabi-gcc --sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -g -Wdeclaration-after-statement -Wall -Wno-parentheses -Wno-switch -Wdisabled-optimization -Wpointer-arith -Wredundant-decls -Wno-pointer-sign -Wcast-qual -Wwrite-strings -Wtype-limits -Wundef -Wmissing-prototypes -c -o /tmp/ffconf.A1355Kwc.o /tmp/ffconf.QGeVZkZA.c
 check_ldflags -Wl,--warn-common
 test_ldflags -Wl,--warn-common
 check_ld -Wl,--warn-common
 check_cc -Wl,--warn-common
-BEGIN /tmp/ffconf.HvMtQqff.c
+BEGIN /tmp/ffconf.QGeVZkZA.c
     1	int main(void){ return 0; }
-END /tmp/ffconf.HvMtQqff.c
-arm-linux-androideabi-gcc --sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -g -Wdeclaration-after-statement -Wall -Wno-parentheses -Wno-switch -Wdisabled-optimization -Wpointer-arith -Wredundant-decls -Wno-pointer-sign -Wcast-qual -Wwrite-strings -Wtype-limits -Wundef -Wmissing-prototypes -Wl,--warn-common -c -o /tmp/ffconf.oPMWktED.o /tmp/ffconf.HvMtQqff.c
-arm-linux-androideabi-gcc --sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm -Wl,--warn-common -o /tmp/ffconf.2gliO7Ag /tmp/ffconf.oPMWktED.o -lm -lz
+END /tmp/ffconf.QGeVZkZA.c
+arm-linux-androideabi-gcc --sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -g -Wdeclaration-after-statement -Wall -Wno-parentheses -Wno-switch -Wdisabled-optimization -Wpointer-arith -Wredundant-decls -Wno-pointer-sign -Wcast-qual -Wwrite-strings -Wtype-limits -Wundef -Wmissing-prototypes -Wl,--warn-common -c -o /tmp/ffconf.A1355Kwc.o /tmp/ffconf.QGeVZkZA.c
+arm-linux-androideabi-gcc --sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm -Wl,--warn-common -o /tmp/ffconf.ErYg6zYM /tmp/ffconf.A1355Kwc.o -lm -lz
 check_ldflags -Wl,--as-needed
 test_ldflags -Wl,--as-needed
 check_ld -Wl,--as-needed
 check_cc -Wl,--as-needed
-BEGIN /tmp/ffconf.HvMtQqff.c
+BEGIN /tmp/ffconf.QGeVZkZA.c
     1	int main(void){ return 0; }
-END /tmp/ffconf.HvMtQqff.c
-arm-linux-androideabi-gcc --sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -g -Wdeclaration-after-statement -Wall -Wno-parentheses -Wno-switch -Wdisabled-optimization -Wpointer-arith -Wredundant-decls -Wno-pointer-sign -Wcast-qual -Wwrite-strings -Wtype-limits -Wundef -Wmissing-prototypes -Wl,--as-needed -c -o /tmp/ffconf.oPMWktED.o /tmp/ffconf.HvMtQqff.c
-arm-linux-androideabi-gcc --sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm -Wl,--warn-common -Wl,--as-needed -o /tmp/ffconf.2gliO7Ag /tmp/ffconf.oPMWktED.o -lm -lz
+END /tmp/ffconf.QGeVZkZA.c
+arm-linux-androideabi-gcc --sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -g -Wdeclaration-after-statement -Wall -Wno-parentheses -Wno-switch -Wdisabled-optimization -Wpointer-arith -Wredundant-decls -Wno-pointer-sign -Wcast-qual -Wwrite-strings -Wtype-limits -Wundef -Wmissing-prototypes -Wl,--as-needed -c -o /tmp/ffconf.A1355Kwc.o /tmp/ffconf.QGeVZkZA.c
+arm-linux-androideabi-gcc --sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm -Wl,--warn-common -Wl,--as-needed -o /tmp/ffconf.ErYg6zYM /tmp/ffconf.A1355Kwc.o -lm -lz
 check_ldflags -Wl,-rpath-link,\$(BUILD_ROOT)/libpostproc -Wl,-rpath-link,\$(BUILD_ROOT)/libswscale -Wl,-rpath-link,\$(BUILD_ROOT)/libavfilter -Wl,-rpath-link,\$(BUILD_ROOT)/libavdevice -Wl,-rpath-link,\$(BUILD_ROOT)/libavformat -Wl,-rpath-link,\$(BUILD_ROOT)/libavcodec -Wl,-rpath-link,\$(BUILD_ROOT)/libavcore -Wl,-rpath-link,\$(BUILD_ROOT)/libavutil
 test_ldflags -Wl,-rpath-link,\$(BUILD_ROOT)/libpostproc -Wl,-rpath-link,\$(BUILD_ROOT)/libswscale -Wl,-rpath-link,\$(BUILD_ROOT)/libavfilter -Wl,-rpath-link,\$(BUILD_ROOT)/libavdevice -Wl,-rpath-link,\$(BUILD_ROOT)/libavformat -Wl,-rpath-link,\$(BUILD_ROOT)/libavcodec -Wl,-rpath-link,\$(BUILD_ROOT)/libavcore -Wl,-rpath-link,\$(BUILD_ROOT)/libavutil
 check_ld -Wl,-rpath-link,\$(BUILD_ROOT)/libpostproc -Wl,-rpath-link,\$(BUILD_ROOT)/libswscale -Wl,-rpath-link,\$(BUILD_ROOT)/libavfilter -Wl,-rpath-link,\$(BUILD_ROOT)/libavdevice -Wl,-rpath-link,\$(BUILD_ROOT)/libavformat -Wl,-rpath-link,\$(BUILD_ROOT)/libavcodec -Wl,-rpath-link,\$(BUILD_ROOT)/libavcore -Wl,-rpath-link,\$(BUILD_ROOT)/libavutil
 check_cc -Wl,-rpath-link,\$(BUILD_ROOT)/libpostproc -Wl,-rpath-link,\$(BUILD_ROOT)/libswscale -Wl,-rpath-link,\$(BUILD_ROOT)/libavfilter -Wl,-rpath-link,\$(BUILD_ROOT)/libavdevice -Wl,-rpath-link,\$(BUILD_ROOT)/libavformat -Wl,-rpath-link,\$(BUILD_ROOT)/libavcodec -Wl,-rpath-link,\$(BUILD_ROOT)/libavcore -Wl,-rpath-link,\$(BUILD_ROOT)/libavutil
-BEGIN /tmp/ffconf.HvMtQqff.c
+BEGIN /tmp/ffconf.QGeVZkZA.c
     1	int main(void){ return 0; }
-END /tmp/ffconf.HvMtQqff.c
-arm-linux-androideabi-gcc --sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -g -Wdeclaration-after-statement -Wall -Wno-parentheses -Wno-switch -Wdisabled-optimization -Wpointer-arith -Wredundant-decls -Wno-pointer-sign -Wcast-qual -Wwrite-strings -Wtype-limits -Wundef -Wmissing-prototypes -Wl,-rpath-link,\$(BUILD_ROOT)/libpostproc -Wl,-rpath-link,\$(BUILD_ROOT)/libswscale -Wl,-rpath-link,\$(BUILD_ROOT)/libavfilter -Wl,-rpath-link,\$(BUILD_ROOT)/libavdevice -Wl,-rpath-link,\$(BUILD_ROOT)/libavformat -Wl,-rpath-link,\$(BUILD_ROOT)/libavcodec -Wl,-rpath-link,\$(BUILD_ROOT)/libavcore -Wl,-rpath-link,\$(BUILD_ROOT)/libavutil -c -o /tmp/ffconf.oPMWktED.o /tmp/ffconf.HvMtQqff.c
-arm-linux-androideabi-gcc --sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm -Wl,--warn-common -Wl,--as-needed -Wl,-rpath-link,\$(BUILD_ROOT)/libpostproc -Wl,-rpath-link,\$(BUILD_ROOT)/libswscale -Wl,-rpath-link,\$(BUILD_ROOT)/libavfilter -Wl,-rpath-link,\$(BUILD_ROOT)/libavdevice -Wl,-rpath-link,\$(BUILD_ROOT)/libavformat -Wl,-rpath-link,\$(BUILD_ROOT)/libavcodec -Wl,-rpath-link,\$(BUILD_ROOT)/libavcore -Wl,-rpath-link,\$(BUILD_ROOT)/libavutil -o /tmp/ffconf.2gliO7Ag /tmp/ffconf.oPMWktED.o -lm -lz
+END /tmp/ffconf.QGeVZkZA.c
+arm-linux-androideabi-gcc --sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -g -Wdeclaration-after-statement -Wall -Wno-parentheses -Wno-switch -Wdisabled-optimization -Wpointer-arith -Wredundant-decls -Wno-pointer-sign -Wcast-qual -Wwrite-strings -Wtype-limits -Wundef -Wmissing-prototypes -Wl,-rpath-link,\$(BUILD_ROOT)/libpostproc -Wl,-rpath-link,\$(BUILD_ROOT)/libswscale -Wl,-rpath-link,\$(BUILD_ROOT)/libavfilter -Wl,-rpath-link,\$(BUILD_ROOT)/libavdevice -Wl,-rpath-link,\$(BUILD_ROOT)/libavformat -Wl,-rpath-link,\$(BUILD_ROOT)/libavcodec -Wl,-rpath-link,\$(BUILD_ROOT)/libavcore -Wl,-rpath-link,\$(BUILD_ROOT)/libavutil -c -o /tmp/ffconf.A1355Kwc.o /tmp/ffconf.QGeVZkZA.c
+arm-linux-androideabi-gcc --sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm -Wl,--warn-common -Wl,--as-needed -Wl,-rpath-link,\$(BUILD_ROOT)/libpostproc -Wl,-rpath-link,\$(BUILD_ROOT)/libswscale -Wl,-rpath-link,\$(BUILD_ROOT)/libavfilter -Wl,-rpath-link,\$(BUILD_ROOT)/libavdevice -Wl,-rpath-link,\$(BUILD_ROOT)/libavformat -Wl,-rpath-link,\$(BUILD_ROOT)/libavcodec -Wl,-rpath-link,\$(BUILD_ROOT)/libavcore -Wl,-rpath-link,\$(BUILD_ROOT)/libavutil -o /tmp/ffconf.ErYg6zYM /tmp/ffconf.A1355Kwc.o -lm -lz
 check_ldflags -Wl,-Bsymbolic
 test_ldflags -Wl,-Bsymbolic
 check_ld -Wl,-Bsymbolic
 check_cc -Wl,-Bsymbolic
-BEGIN /tmp/ffconf.HvMtQqff.c
+BEGIN /tmp/ffconf.QGeVZkZA.c
     1	int main(void){ return 0; }
-END /tmp/ffconf.HvMtQqff.c
-arm-linux-androideabi-gcc --sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -g -Wdeclaration-after-statement -Wall -Wno-parentheses -Wno-switch -Wdisabled-optimization -Wpointer-arith -Wredundant-decls -Wno-pointer-sign -Wcast-qual -Wwrite-strings -Wtype-limits -Wundef -Wmissing-prototypes -Wl,-Bsymbolic -c -o /tmp/ffconf.oPMWktED.o /tmp/ffconf.HvMtQqff.c
-arm-linux-androideabi-gcc --sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm -Wl,--warn-common -Wl,--as-needed -Wl,-rpath-link,$(BUILD_ROOT)/libpostproc -Wl,-rpath-link,$(BUILD_ROOT)/libswscale -Wl,-rpath-link,$(BUILD_ROOT)/libavfilter -Wl,-rpath-link,$(BUILD_ROOT)/libavdevice -Wl,-rpath-link,$(BUILD_ROOT)/libavformat -Wl,-rpath-link,$(BUILD_ROOT)/libavcodec -Wl,-rpath-link,$(BUILD_ROOT)/libavcore -Wl,-rpath-link,$(BUILD_ROOT)/libavutil -Wl,-Bsymbolic -o /tmp/ffconf.2gliO7Ag /tmp/ffconf.oPMWktED.o -lm -lz
-test_ldflags -Wl,--version-script,/tmp/ffconf.fkq33AEc.ver
-check_ld -Wl,--version-script,/tmp/ffconf.fkq33AEc.ver
-check_cc -Wl,--version-script,/tmp/ffconf.fkq33AEc.ver
-BEGIN /tmp/ffconf.HvMtQqff.c
+END /tmp/ffconf.QGeVZkZA.c
+arm-linux-androideabi-gcc --sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -g -Wdeclaration-after-statement -Wall -Wno-parentheses -Wno-switch -Wdisabled-optimization -Wpointer-arith -Wredundant-decls -Wno-pointer-sign -Wcast-qual -Wwrite-strings -Wtype-limits -Wundef -Wmissing-prototypes -Wl,-Bsymbolic -c -o /tmp/ffconf.A1355Kwc.o /tmp/ffconf.QGeVZkZA.c
+arm-linux-androideabi-gcc --sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm -Wl,--warn-common -Wl,--as-needed -Wl,-rpath-link,$(BUILD_ROOT)/libpostproc -Wl,-rpath-link,$(BUILD_ROOT)/libswscale -Wl,-rpath-link,$(BUILD_ROOT)/libavfilter -Wl,-rpath-link,$(BUILD_ROOT)/libavdevice -Wl,-rpath-link,$(BUILD_ROOT)/libavformat -Wl,-rpath-link,$(BUILD_ROOT)/libavcodec -Wl,-rpath-link,$(BUILD_ROOT)/libavcore -Wl,-rpath-link,$(BUILD_ROOT)/libavutil -Wl,-Bsymbolic -o /tmp/ffconf.ErYg6zYM /tmp/ffconf.A1355Kwc.o -lm -lz
+test_ldflags -Wl,--version-script,/tmp/ffconf.CCMlhCPS.ver
+check_ld -Wl,--version-script,/tmp/ffconf.CCMlhCPS.ver
+check_cc -Wl,--version-script,/tmp/ffconf.CCMlhCPS.ver
+BEGIN /tmp/ffconf.QGeVZkZA.c
     1	int main(void){ return 0; }
-END /tmp/ffconf.HvMtQqff.c
-arm-linux-androideabi-gcc --sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -g -Wdeclaration-after-statement -Wall -Wno-parentheses -Wno-switch -Wdisabled-optimization -Wpointer-arith -Wredundant-decls -Wno-pointer-sign -Wcast-qual -Wwrite-strings -Wtype-limits -Wundef -Wmissing-prototypes -Wl,--version-script,/tmp/ffconf.fkq33AEc.ver -c -o /tmp/ffconf.oPMWktED.o /tmp/ffconf.HvMtQqff.c
-arm-linux-androideabi-gcc --sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm -Wl,--warn-common -Wl,--as-needed -Wl,-rpath-link,$(BUILD_ROOT)/libpostproc -Wl,-rpath-link,$(BUILD_ROOT)/libswscale -Wl,-rpath-link,$(BUILD_ROOT)/libavfilter -Wl,-rpath-link,$(BUILD_ROOT)/libavdevice -Wl,-rpath-link,$(BUILD_ROOT)/libavformat -Wl,-rpath-link,$(BUILD_ROOT)/libavcodec -Wl,-rpath-link,$(BUILD_ROOT)/libavcore -Wl,-rpath-link,$(BUILD_ROOT)/libavutil -Wl,-Bsymbolic -Wl,--version-script,/tmp/ffconf.fkq33AEc.ver -o /tmp/ffconf.2gliO7Ag /tmp/ffconf.oPMWktED.o -lm -lz
+END /tmp/ffconf.QGeVZkZA.c
+arm-linux-androideabi-gcc --sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -g -Wdeclaration-after-statement -Wall -Wno-parentheses -Wno-switch -Wdisabled-optimization -Wpointer-arith -Wredundant-decls -Wno-pointer-sign -Wcast-qual -Wwrite-strings -Wtype-limits -Wundef -Wmissing-prototypes -Wl,--version-script,/tmp/ffconf.CCMlhCPS.ver -c -o /tmp/ffconf.A1355Kwc.o /tmp/ffconf.QGeVZkZA.c
+arm-linux-androideabi-gcc --sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm -Wl,--warn-common -Wl,--as-needed -Wl,-rpath-link,$(BUILD_ROOT)/libpostproc -Wl,-rpath-link,$(BUILD_ROOT)/libswscale -Wl,-rpath-link,$(BUILD_ROOT)/libavfilter -Wl,-rpath-link,$(BUILD_ROOT)/libavdevice -Wl,-rpath-link,$(BUILD_ROOT)/libavformat -Wl,-rpath-link,$(BUILD_ROOT)/libavcodec -Wl,-rpath-link,$(BUILD_ROOT)/libavcore -Wl,-rpath-link,$(BUILD_ROOT)/libavutil -Wl,-Bsymbolic -Wl,--version-script,/tmp/ffconf.CCMlhCPS.ver -o /tmp/ffconf.ErYg6zYM /tmp/ffconf.A1355Kwc.o -lm -lz
 check_cc
-BEGIN /tmp/ffconf.HvMtQqff.c
+BEGIN /tmp/ffconf.QGeVZkZA.c
     1	void ff_foo(void) __asm__ ("av_foo@VERSION");
     2	void ff_foo(void) { __asm__(""); }
-END /tmp/ffconf.HvMtQqff.c
-arm-linux-androideabi-gcc --sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -g -Wdeclaration-after-statement -Wall -Wno-parentheses -Wno-switch -Wdisabled-optimization -Wpointer-arith -Wredundant-decls -Wno-pointer-sign -Wcast-qual -Wwrite-strings -Wtype-limits -Wundef -Wmissing-prototypes -c -o /tmp/ffconf.oPMWktED.o /tmp/ffconf.HvMtQqff.c
-/tmp/ccpeX0Xh.s: Assembler messages:
-/tmp/ccpeX0Xh.s:23: Error: unrecognized symbol type ""
-/tmp/ccpeX0Xh.s:24: Error: bad instruction `av_foo'
-/tmp/ccpeX0Xh.s:34: Error: expected comma after name `av_foo' in .size directive
+END /tmp/ffconf.QGeVZkZA.c
+arm-linux-androideabi-gcc --sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -g -Wdeclaration-after-statement -Wall -Wno-parentheses -Wno-switch -Wdisabled-optimization -Wpointer-arith -Wredundant-decls -Wno-pointer-sign -Wcast-qual -Wwrite-strings -Wtype-limits -Wundef -Wmissing-prototypes -c -o /tmp/ffconf.A1355Kwc.o /tmp/ffconf.QGeVZkZA.c
+/tmp/ccQX1AhB.s: Assembler messages:
+/tmp/ccQX1AhB.s:23: Error: unrecognized symbol type ""
+/tmp/ccQX1AhB.s:24: Error: bad instruction `av_foo'
+/tmp/ccQX1AhB.s:34: Error: expected comma after name `av_foo' in .size directive
 check_cc
-BEGIN /tmp/ffconf.HvMtQqff.c
+BEGIN /tmp/ffconf.QGeVZkZA.c
     1	__asm__(".symver ff_foo,av_foo@VERSION");
     2	void ff_foo(void) {}
-END /tmp/ffconf.HvMtQqff.c
-arm-linux-androideabi-gcc --sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -g -Wdeclaration-after-statement -Wall -Wno-parentheses -Wno-switch -Wdisabled-optimization -Wpointer-arith -Wredundant-decls -Wno-pointer-sign -Wcast-qual -Wwrite-strings -Wtype-limits -Wundef -Wmissing-prototypes -c -o /tmp/ffconf.oPMWktED.o /tmp/ffconf.HvMtQqff.c
-/tmp/ffconf.HvMtQqff.c:2: warning: no previous prototype for 'ff_foo'
+END /tmp/ffconf.QGeVZkZA.c
+arm-linux-androideabi-gcc --sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -g -Wdeclaration-after-statement -Wall -Wno-parentheses -Wno-switch -Wdisabled-optimization -Wpointer-arith -Wredundant-decls -Wno-pointer-sign -Wcast-qual -Wwrite-strings -Wtype-limits -Wundef -Wmissing-prototypes -c -o /tmp/ffconf.A1355Kwc.o /tmp/ffconf.QGeVZkZA.c
+/tmp/ffconf.QGeVZkZA.c:2: warning: no previous prototype for 'ff_foo'
 check_cflags -fno-math-errno
 check_cc -fno-math-errno
-BEGIN /tmp/ffconf.HvMtQqff.c
+BEGIN /tmp/ffconf.QGeVZkZA.c
     1	int x;
-END /tmp/ffconf.HvMtQqff.c
-arm-linux-androideabi-gcc --sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -g -Wdeclaration-after-statement -Wall -Wno-parentheses -Wno-switch -Wdisabled-optimization -Wpointer-arith -Wredundant-decls -Wno-pointer-sign -Wcast-qual -Wwrite-strings -Wtype-limits -Wundef -Wmissing-prototypes -O2 -fno-math-errno -c -o /tmp/ffconf.oPMWktED.o /tmp/ffconf.HvMtQqff.c
+END /tmp/ffconf.QGeVZkZA.c
+arm-linux-androideabi-gcc --sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -g -Wdeclaration-after-statement -Wall -Wno-parentheses -Wno-switch -Wdisabled-optimization -Wpointer-arith -Wredundant-decls -Wno-pointer-sign -Wcast-qual -Wwrite-strings -Wtype-limits -Wundef -Wmissing-prototypes -O2 -fno-math-errno -c -o /tmp/ffconf.A1355Kwc.o /tmp/ffconf.QGeVZkZA.c
 check_cflags -fno-signed-zeros
 check_cc -fno-signed-zeros
-BEGIN /tmp/ffconf.HvMtQqff.c
+BEGIN /tmp/ffconf.QGeVZkZA.c
     1	int x;
-END /tmp/ffconf.HvMtQqff.c
-arm-linux-androideabi-gcc --sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -g -Wdeclaration-after-statement -Wall -Wno-parentheses -Wno-switch -Wdisabled-optimization -Wpointer-arith -Wredundant-decls -Wno-pointer-sign -Wcast-qual -Wwrite-strings -Wtype-limits -Wundef -Wmissing-prototypes -O2 -fno-math-errno -fno-signed-zeros -c -o /tmp/ffconf.oPMWktED.o /tmp/ffconf.HvMtQqff.c
+END /tmp/ffconf.QGeVZkZA.c
+arm-linux-androideabi-gcc --sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -g -Wdeclaration-after-statement -Wall -Wno-parentheses -Wno-switch -Wdisabled-optimization -Wpointer-arith -Wredundant-decls -Wno-pointer-sign -Wcast-qual -Wwrite-strings -Wtype-limits -Wundef -Wmissing-prototypes -O2 -fno-math-errno -fno-signed-zeros -c -o /tmp/ffconf.A1355Kwc.o /tmp/ffconf.QGeVZkZA.c
 check_cflags -fno-tree-vectorize
 check_cc -fno-tree-vectorize
-BEGIN /tmp/ffconf.HvMtQqff.c
+BEGIN /tmp/ffconf.QGeVZkZA.c
     1	int x;
-END /tmp/ffconf.HvMtQqff.c
-arm-linux-androideabi-gcc --sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -g -Wdeclaration-after-statement -Wall -Wno-parentheses -Wno-switch -Wdisabled-optimization -Wpointer-arith -Wredundant-decls -Wno-pointer-sign -Wcast-qual -Wwrite-strings -Wtype-limits -Wundef -Wmissing-prototypes -O2 -fno-math-errno -fno-signed-zeros -fno-tree-vectorize -c -o /tmp/ffconf.oPMWktED.o /tmp/ffconf.HvMtQqff.c
+END /tmp/ffconf.QGeVZkZA.c
+arm-linux-androideabi-gcc --sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -g -Wdeclaration-after-statement -Wall -Wno-parentheses -Wno-switch -Wdisabled-optimization -Wpointer-arith -Wredundant-decls -Wno-pointer-sign -Wcast-qual -Wwrite-strings -Wtype-limits -Wundef -Wmissing-prototypes -O2 -fno-math-errno -fno-signed-zeros -fno-tree-vectorize -c -o /tmp/ffconf.A1355Kwc.o /tmp/ffconf.QGeVZkZA.c
 check_cflags -Werror=implicit-function-declaration
 check_cc -Werror=implicit-function-declaration
-BEGIN /tmp/ffconf.HvMtQqff.c
+BEGIN /tmp/ffconf.QGeVZkZA.c
     1	int x;
-END /tmp/ffconf.HvMtQqff.c
-arm-linux-androideabi-gcc --sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -g -Wdeclaration-after-statement -Wall -Wno-parentheses -Wno-switch -Wdisabled-optimization -Wpointer-arith -Wredundant-decls -Wno-pointer-sign -Wcast-qual -Wwrite-strings -Wtype-limits -Wundef -Wmissing-prototypes -O2 -fno-math-errno -fno-signed-zeros -fno-tree-vectorize -Werror=implicit-function-declaration -c -o /tmp/ffconf.oPMWktED.o /tmp/ffconf.HvMtQqff.c
+END /tmp/ffconf.QGeVZkZA.c
+arm-linux-androideabi-gcc --sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -g -Wdeclaration-after-statement -Wall -Wno-parentheses -Wno-switch -Wdisabled-optimization -Wpointer-arith -Wredundant-decls -Wno-pointer-sign -Wcast-qual -Wwrite-strings -Wtype-limits -Wundef -Wmissing-prototypes -O2 -fno-math-errno -fno-signed-zeros -fno-tree-vectorize -Werror=implicit-function-declaration -c -o /tmp/ffconf.A1355Kwc.o /tmp/ffconf.QGeVZkZA.c
 check_cflags -Werror=missing-prototypes
 check_cc -Werror=missing-prototypes
-BEGIN /tmp/ffconf.HvMtQqff.c
+BEGIN /tmp/ffconf.QGeVZkZA.c
     1	int x;
-END /tmp/ffconf.HvMtQqff.c
-arm-linux-androideabi-gcc --sysroot=/docs/android/android-ndk-r6//platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -g -Wdeclaration-after-statement -Wall -Wno-parentheses -Wno-switch -Wdisabled-optimization -Wpointer-arith -Wredundant-decls -Wno-pointer-sign -Wcast-qual -Wwrite-strings -Wtype-limits -Wundef -Wmissing-prototypes -O2 -fno-math-errno -fno-signed-zeros -fno-tree-vectorize -Werror=implicit-function-declaration -Werror=missing-prototypes -c -o /tmp/ffconf.oPMWktED.o /tmp/ffconf.HvMtQqff.c
+END /tmp/ffconf.QGeVZkZA.c
+arm-linux-androideabi-gcc --sysroot=/root/android/android-ndk-r5c/platforms/android-3/arch-arm -D_ISOC99_SOURCE -D_POSIX_C_SOURCE=200112 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DPIC -march=armv7-a -mfloat-abi=softfp -std=c99 -fomit-frame-pointer -fPIC -marm -g -Wdeclaration-after-statement -Wall -Wno-parentheses -Wno-switch -Wdisabled-optimization -Wpointer-arith -Wredundant-decls -Wno-pointer-sign -Wcast-qual -Wwrite-strings -Wtype-limits -Wundef -Wmissing-prototypes -O2 -fno-math-errno -fno-signed-zeros -fno-tree-vectorize -Werror=implicit-function-declaration -Werror=missing-prototypes -c -o /tmp/ffconf.A1355Kwc.o /tmp/ffconf.QGeVZkZA.c
